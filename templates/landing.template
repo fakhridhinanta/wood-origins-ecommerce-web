@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valley Oak LVT — Vinyl Done Properly | Wood Origins</title>
+<meta name="description" content="Luxury vinyl flooring, done properly — 100% virgin vinyl, fiberglass core, R10 slip-resistant, 25-year warranty. Supplied & installed by Wood Origins. Get your quote in a minute.">
+<meta property="og:title" content="Wood Origins — Vinyl Done Properly">
+<meta property="og:description" content="100% virgin vinyl, installed by our own crew, backed 25 years. The floor you'll install last. Get a quote or find your finish in a minute.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://woodorigins.sg/">
+<!-- TODO: add <meta property="og:image" content="https://woodorigins.sg/..."> for the ad link preview -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" id="dupvp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2b2523;        /* near-black brown text */
+  --brown:#422E2D;
+  --brown-soft:#6b5651;
+  --blue:#235787;       /* WO button blue */
+  --blue-dark:#1b4468;
+  --taupe:#d8ccc2;      /* hero band */
+  --cream:#F4EFEA;
+  --page:#f6f4f1;
+  --line:#e7ded5;
+  --grey:#8a7d79;
+  --wa:#25D366;
+  --r:2px; --maxw:1200px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:"Poppins",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;margin:0;background:var(--page);color:var(--ink);line-height:1.6;font-weight:400;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:11px;font-weight:600;color:var(--brown-soft);}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:70px;gap:20px;}
+.logo{font-weight:700;font-size:22px;color:var(--ink);letter-spacing:.2px;}
+.nav-links{display:flex;gap:30px;justify-content:center;font-size:12.5px;font-weight:500;color:var(--ink);text-transform:uppercase;letter-spacing:1px;}
+.nav-links a:hover{color:var(--blue);}
+.nav-links .caret{font-size:9px;opacity:.6;}
+.nav-right{display:flex;align-items:center;gap:18px;justify-content:flex-end;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink);}
+.nav-right a:hover{color:var(--blue);}
+.nav-right .cart{position:relative;font-size:16px;}
+.cart-count{position:absolute;top:-8px;right:-9px;background:var(--blue);color:#fff;font-size:10px;font-weight:700;min-width:16px;height:16px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 3px;}
+@media(max-width:820px){.nav-links{display:none;}.nav-inner{grid-template-columns:1fr auto;}}
+
+/* HERO */
+.hero{position:relative;height:440px;overflow:hidden;background:var(--taupe);}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 60%;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,25,22,.35),rgba(30,25,22,.05));}
+.hero-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;z-index:2;text-shadow:0 2px 18px rgba(0,0,0,.35);}
+.hero-txt .series{font-size:56px;line-height:1;font-weight:300;}
+.hero-txt .series b{font-weight:700;}
+.hero-txt .vf{margin-top:10px;font-size:17px;letter-spacing:9px;font-weight:500;text-transform:uppercase;}
+@media(max-width:820px){.hero{height:300px;}.hero-txt .series{font-size:38px;}.hero-txt .vf{font-size:13px;letter-spacing:5px;}}
+
+/* BREADCRUMB */
+.crumb{font-size:11px;color:var(--grey);padding:20px 0 0;text-transform:uppercase;letter-spacing:1px;}
+.crumb a:hover{color:var(--blue);}
+
+/* PDP */
+.pdp{display:grid;grid-template-columns:1.15fr 1fr;gap:54px;padding:22px 0 50px;align-items:start;}
+@media(max-width:920px){.pdp{grid-template-columns:1fr;gap:30px;}}
+.gallery{position:sticky;top:20px;}
+@media(max-width:920px){.gallery{position:static;}}
+.main-img{position:relative;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#eee;}
+.main-img img{width:100%;height:100%;object-fit:cover;}
+.room-btn{position:absolute;bottom:14px;right:14px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:var(--r);padding:10px 14px;font-size:11px;font-weight:600;color:var(--brown);cursor:pointer;display:flex;gap:6px;align-items:center;text-transform:uppercase;letter-spacing:.6px;font-family:inherit;box-shadow:0 2px 10px rgba(0,0,0,.12);}
+.room-btn:hover{background:#fff;color:var(--blue);}
+.disc{font-size:11px;color:var(--grey);margin-top:8px;font-style:italic;}
+.swatch-lab{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--brown-soft);margin:18px 0 10px;}
+.swatches{display:flex;gap:12px;flex-wrap:wrap;}
+.sw{width:74px;cursor:pointer;text-align:center;}
+.sw .chip{width:74px;height:74px;border-radius:var(--r);border:2px solid transparent;background-size:cover;background-position:center;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);}
+.sw.active .chip{border-color:var(--brown);}
+.sw span{display:block;font-size:9.5px;color:var(--grey);margin-top:5px;line-height:1.25;text-transform:uppercase;letter-spacing:.3px;}
+.sw-tabs{display:flex;gap:9px;margin:2px 0 2px;}
+.sw-tab{flex:1;background:none;border:1px solid var(--line);border-radius:var(--r);padding:9px 10px 8px;cursor:pointer;text-align:left;font-family:inherit;transition:.15s;}
+.sw-tab:hover{border-color:var(--brown-soft);}
+.sw-tab.active{border-color:var(--brown);background:#fbf8f4;}
+.sw-tab-top{display:flex;align-items:baseline;justify-content:space-between;gap:6px;font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--brown);}
+.sw-tab-top em{font-style:normal;font-weight:400;font-size:9.5px;color:var(--grey);letter-spacing:.4px;}
+.sw-tab.active .sw-tab-top{color:var(--blue);}
+.sw-tab-strip{display:flex;height:11px;border-radius:2px;overflow:hidden;margin-top:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);}
+.sw-tab-strip i{flex:1;}
+.sw-cur{font-size:9.5px;color:var(--grey);margin:11px 0 1px;text-transform:uppercase;letter-spacing:.4px;}
+.sw-cur b{color:var(--blue);font-weight:500;}
+.sw-row{display:flex;flex-wrap:wrap;gap:9px;padding:8px 0 2px;}
+.sw-dd{position:relative;max-width:290px;margin:2px 0 2px;}.sw-dd-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:11px 14px;cursor:pointer;font-family:inherit;font-size:11px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:var(--brown);}.sw-dd-btn:hover{border-color:var(--brown-soft);}.sw-dd-btn em{font-style:normal;font-weight:400;color:var(--grey);letter-spacing:.3px;margin-left:8px;}.sw-dd-btn .chev{transition:.2s;font-size:10px;}.sw-dd.open .sw-dd-btn{border-color:var(--brown);}.sw-dd.open .sw-dd-btn .chev{transform:rotate(180deg);}.sw-dd-menu{display:none;position:absolute;top:calc(100% + 5px);left:0;right:0;z-index:20;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:0 10px 28px rgba(66,46,45,.16);overflow:hidden;}.sw-dd.open .sw-dd-menu{display:block;}.sw-dd-opt{width:100%;display:flex;flex-direction:column;gap:6px;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 14px;cursor:pointer;font-family:inherit;text-align:left;}.sw-dd-opt:last-child{border-bottom:0;}.sw-dd-opt:hover{background:#fbf8f4;}.sw-dd-opt.active{background:#f4efea;}.sw-dd-opt .lab{font-size:11px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:var(--brown);}.sw-dd-opt .lab em{font-style:normal;font-weight:400;color:var(--grey);margin-left:8px;letter-spacing:.3px;}.sw-dd-opt .mstrip{display:flex;height:9px;border-radius:2px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);}.sw-dd-opt .mstrip i{flex:1;}.sw-seglab{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--grey);margin:2px 0 9px;}.sw-seg{display:flex;gap:8px;margin-bottom:6px;}.sw-seg-btn{flex:1;display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;padding:12px 8px;background:#fff;border:1.5px solid var(--line);border-radius:var(--r);cursor:pointer;font-family:inherit;transition:.15s;}.sw-seg-btn:hover{border-color:var(--brown-soft);}.sw-seg-btn.active{border-color:var(--brown);background:var(--brown);}.sw-seg-btn .t{font-size:12.5px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;color:var(--brown);}.sw-seg-btn.active .t{color:#fff;}.sw-seg-btn .c{font-size:9.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--grey);}.sw-seg-btn.active .c{color:rgba(255,255,255,.82);}
+.gsw{width:56px;cursor:pointer;text-align:center;}
+.gsw .gtile{width:56px;height:56px;border-radius:var(--r);border:2px solid transparent;background-size:cover;background-position:center;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);transition:.15s;}
+.gsw.active .gtile{border-color:var(--brown);}
+.gsw:hover .gtile{box-shadow:0 4px 12px rgba(66,46,45,.18);}
+.gsw span{display:block;font-size:8px;color:var(--grey);margin-top:4px;line-height:1.2;text-transform:uppercase;letter-spacing:.2px;}
+.gsw span em{display:block;font-style:normal;font-size:7.5px;letter-spacing:.5px;opacity:.75;margin-top:1px;}
+
+/* BUY BOX */
+.buy .collection{color:var(--brown-soft);}
+.buy h1{margin:6px 0 2px;font-size:34px;font-weight:700;color:var(--ink);line-height:1.1;text-transform:uppercase;letter-spacing:.5px;}
+.buy .code{font-size:12px;color:var(--grey);letter-spacing:1px;margin-bottom:14px;}
+.buy .desc{font-size:14px;color:var(--brown-soft);margin:0 0 16px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+.chip-spec{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:6px 11px;font-size:11px;color:var(--ink);text-transform:uppercase;letter-spacing:.5px;font-weight:500;}
+
+.ecom{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:var(--r);background:#fff;padding:20px;margin-bottom:18px;}
+.ecom .tagnew{display:inline-block;background:var(--cream);color:var(--brown);font-size:9.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 9px;border-radius:20px;margin-bottom:12px;}
+.mode-toggle{display:inline-flex;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:14px;width:100%;}
+.mode-toggle button{flex:1;border:none;background:#fff;padding:11px 10px;font-size:11.5px;font-weight:600;color:var(--grey);cursor:pointer;text-transform:uppercase;letter-spacing:.6px;font-family:inherit;}
+.mode-toggle button.active{background:var(--brown);color:#fff;}
+.price{font-size:30px;font-weight:700;color:var(--ink);letter-spacing:-.5px;}
+.price small{font-size:14px;font-weight:500;color:var(--grey);}
+.price-note{font-size:12px;color:var(--brown-soft);margin-top:4px;}
+.gst-note{font-size:11px;color:var(--grey);margin-top:2px;}
+.cta-col{display:flex;flex-direction:column;gap:12px;margin-top:16px;}
+.ecom .price-lite{margin-bottom:0;}
+.ecom .sample-note{line-height:1.6;}
+.ecom .cta-links{margin-top:4px;}
+.btn{border:none;border-radius:var(--r);padding:15px 18px;font-size:12.5px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:.15s;text-transform:uppercase;letter-spacing:.9px;font-family:inherit;}
+.btn-primary{background:var(--blue);color:#fff;}
+.btn-primary:hover{background:var(--blue-dark);}
+.btn-outline{background:#fff;color:var(--brown);border:1.5px solid var(--brown);}
+.btn-outline:hover{background:var(--cream);}
+.btn-wa{background:var(--wa);color:#fff;}
+.btn-wa:hover{filter:brightness(.96);}
+.sample-note{font-size:11px;color:var(--grey);text-align:center;}
+.btn-hero{padding:20px 18px;font-size:15px;letter-spacing:1px;box-shadow:0 8px 20px rgba(35,87,135,.28);}
+.cta-secondary{display:flex;gap:9px;margin-top:6px;}
+.cta-secondary .btn{flex:1;padding:13px 12px;font-size:11.5px;}
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:11px 16px;}
+.badge{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:var(--brown-soft);}
+.badge .bi{font-size:15px;}.badge b{color:var(--ink);font-weight:600;}
+
+/* TRUST */
+.trust{background:var(--brown);color:#fff;}
+.trust-inner{display:flex;flex-wrap:wrap;justify-content:space-around;gap:18px;padding:32px 0;text-align:center;}
+.trust-tag{text-align:center;padding:34px 0 4px;}
+.tt-main{font-size:27px;font-weight:700;letter-spacing:.5px;}
+.tt-sub{font-size:13.5px;opacity:.82;margin-top:7px;letter-spacing:.3px;}
+.trust .n{font-size:27px;font-weight:700;}
+.trust .l{font-size:10.5px;opacity:.75;letter-spacing:1.2px;text-transform:uppercase;margin-top:3px;}
+
+/* SECTIONS */
+section.blk{padding:56px 0;}
+section.blk.cream{background:var(--cream);}
+.blk-head{text-align:center;max-width:760px;margin:0 auto 32px;}
+.blk h2{font-size:25px;font-weight:700;color:var(--ink);margin:8px 0 0;text-transform:uppercase;letter-spacing:1.2px;}
+.blk .lead{color:var(--brown-soft);font-size:14.5px;margin:12px 0 0;}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media(max-width:820px){.why{grid-template-columns:1fr;}}
+.why .w{text-align:center;}
+.why .wi{width:52px;height:52px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 12px;}
+.why h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.8px;color:var(--ink);}
+.why p{margin:0;font-size:13px;color:var(--brown-soft);}
+
+.spec{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;max-width:760px;margin:0 auto;}
+.spec tr{border-bottom:1px solid var(--line);}.spec tr:last-child{border-bottom:none;}
+.spec td{padding:13px 18px;}
+.spec td:first-child{color:var(--grey);width:44%;}
+.spec td:last-child{color:var(--ink);font-weight:500;}
+
+.faq{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;max-width:820px;margin:0 auto;}
+.faq details{border-bottom:1px solid var(--line);}.faq details:last-child{border-bottom:none;}
+.faq summary{padding:18px 20px;font-weight:600;font-size:13.5px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--ink);}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";font-size:20px;color:var(--blue);}
+.faq details[open] summary::after{content:"–";}
+.faq p{margin:0;padding:0 20px 20px;font-size:13.5px;color:var(--brown-soft);}
+
+/* COLLECTION GRID */
+.rel{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+@media(max-width:920px){.rel{grid-template-columns:repeat(2,1fr);}}
+.rcard{cursor:pointer;}
+.rcard .rimg{aspect-ratio:3/4;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#eee;}
+.rcard .rimg img{width:100%;height:100%;object-fit:cover;transition:.3s;}
+.rcard:hover .rimg img{transform:scale(1.04);}
+.rcard h4{margin:12px 0 3px;font-size:12.5px;color:var(--ink);font-weight:600;text-transform:uppercase;letter-spacing:.6px;text-align:center;}
+.rcard .vm{font-size:10.5px;color:var(--blue);text-transform:uppercase;letter-spacing:1.2px;text-align:center;font-weight:600;}
+.fin-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:26px;}
+.fin-tab{border:1px solid var(--line);background:#fff;border-radius:var(--r);padding:10px 20px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;cursor:pointer;color:var(--brown);font-family:inherit;}
+.fin-tab.active{background:var(--brown);color:#fff;border-color:var(--brown);}
+.more-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--brown);color:#fff;border-radius:var(--r);aspect-ratio:3/4;cursor:pointer;font-size:12px;font-weight:600;padding:14px;text-transform:uppercase;letter-spacing:.5px;line-height:1.5;}
+.more-tile span{opacity:.8;font-weight:400;text-transform:none;letter-spacing:0;font-size:11px;margin-top:6px;}
+.swatch-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+@media(max-width:820px){.swatch-wall{grid-template-columns:repeat(3,1fr);}}
+.sw-chip{cursor:pointer;text-align:center;}
+.sw-tile{aspect-ratio:1;border-radius:var(--r);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);transition:.15s;}
+.sw-chip:hover .sw-tile{transform:scale(1.05);box-shadow:0 6px 16px rgba(66,46,45,.2);}
+.sw-chip span{display:block;font-size:11px;color:var(--ink);margin-top:8px;text-transform:uppercase;letter-spacing:.3px;line-height:1.3;}
+.sw-chip span em{display:block;font-style:normal;font-size:9.5px;color:var(--grey);letter-spacing:1px;margin-top:2px;}
+.swatch-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-bottom:6px;}
+@media(max-width:820px){.swatch-grid{grid-template-columns:repeat(3,1fr);}}
+.fin-group-head{display:flex;align-items:baseline;gap:12px;margin:30px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.fin-group-head:first-child{margin-top:0;}
+.fin-group-head h3{font-size:16px;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:1px;margin:0;}
+.fin-group-head span{font-size:12px;color:var(--grey);text-transform:uppercase;letter-spacing:.6px;}
+.price-lite{font-size:13px;color:var(--brown-soft);margin-bottom:16px;line-height:1.55;}
+.btn-hero2{padding:16px 18px;font-size:13px;}
+.cta-links{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:12px;font-size:12.5px;}
+.cta-links a{color:var(--blue);font-weight:600;cursor:pointer;}
+.cta-links a:hover{text-decoration:underline;}
+.cta-links span{color:var(--grey);}
+.wiz-hero-img{width:100%;height:130px;object-fit:cover;border-radius:var(--r);margin:0 0 14px;}
+.moodboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 4px;padding:14px;background:var(--cream);border-radius:var(--r);}
+.mood-chip{text-align:center;}
+.mood-tile{aspect-ratio:3/4;border-radius:var(--r);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),0 4px 12px rgba(66,46,45,.12);}
+.mood-chip span{display:block;font-size:10.5px;color:var(--ink);margin-top:7px;text-transform:uppercase;letter-spacing:.3px;line-height:1.25;}
+.mood-chip span em{display:block;font-style:normal;font-size:9px;color:var(--grey);letter-spacing:1px;margin-top:2px;}
+#wizProg{margin-bottom:18px;}
+.wiz-bar{height:5px;background:var(--line);border-radius:20px;overflow:hidden;}
+.wiz-bar>div{height:100%;background:var(--blue);transition:width .3s;}
+.wiz-count{font-size:11px;color:var(--grey);margin-top:7px;text-transform:uppercase;letter-spacing:.6px;}
+.wiz-q{font-size:20px;font-weight:600;color:var(--ink);margin-bottom:6px;text-wrap:balance;}
+.wiz-help{font-size:12.5px;color:var(--grey);margin-bottom:16px;line-height:1.5;}
+.wiz-opts{display:flex;flex-direction:column;gap:9px;}
+.wiz-opt{text-align:left;padding:15px 16px;border:1.5px solid var(--line);border-radius:var(--r);background:#fff;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;font-family:inherit;transition:.12s;}
+.wiz-opt:hover{border-color:var(--blue);background:var(--cream);}
+.wiz-opt.sel{border-color:var(--brown);background:var(--brown);color:#fff;}
+#wizFoot{display:flex;gap:10px;margin-top:22px;}
+#wizFoot .btn{flex:1;}
+#wizFoot .wiz-back{flex:0 0 auto;}
+.wiz-done{width:46px;height:46px;border-radius:50%;background:#1f8a4c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 12px;}
+.wiz-rtitle{font-size:20px;font-weight:700;color:var(--ink);text-align:center;}
+.wiz-rtext{font-size:13.5px;color:var(--brown-soft);text-align:center;margin:6px 0 14px;}
+.wiz-fine{font-size:11.5px;color:var(--grey);text-align:center;margin-top:14px;line-height:1.5;}
+.wiz-consent{display:flex;gap:9px;align-items:flex-start;font-size:11.5px;color:var(--brown-soft);margin-top:10px;cursor:pointer;line-height:1.5;}
+.wiz-consent input{width:auto;margin-top:2px;flex:0 0 auto;}
+.wiz-consent a{color:var(--blue);}
+.wiz-info .cmp{margin-top:4px;}
+.wiz-info .cmp-note{margin-top:8px;}
+.worth-intro{font-size:13.5px;color:var(--brown-soft);line-height:1.55;margin:0 0 16px;}
+.worth-list{display:flex;flex-direction:column;gap:14px;margin-bottom:20px;}
+.worth-item{display:flex;gap:14px;align-items:flex-start;opacity:0;animation:worthIn .45s ease forwards;}
+@keyframes worthIn{from{opacity:0;transform:translateY(9px);}to{opacity:1;transform:none;}}
+@media(prefers-reduced-motion:reduce){.worth-item{animation:none;opacity:1;}}
+.worth-num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--brown);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;font-variant-numeric:tabular-nums;}
+.worth-h{font-size:14.5px;font-weight:600;color:var(--ink);margin-bottom:3px;text-wrap:balance;}
+.worth-p{font-size:12.5px;color:var(--brown-soft);line-height:1.55;}
+.worth-proof{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--brown-soft);margin:4px 0 10px;}
+/* finish families */
+.fam-band{background:var(--cream);padding:44px 0;border-top:1px solid var(--line);}
+.fam-head{text-align:center;margin-bottom:26px;}
+.fam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:840px;margin:0 auto;}
+@media(max-width:820px){.fam-grid{grid-template-columns:1fr;}}
+.fam-card{border:1px solid var(--line);border-radius:var(--r);background:#fff;padding:0 0 16px;cursor:pointer;font-family:inherit;overflow:hidden;transition:.15s;}
+.fam-card:hover{box-shadow:0 10px 26px rgba(66,46,45,.14);transform:translateY(-2px);}
+.fam-tile{height:118px;}
+.fam-wood{background:repeating-linear-gradient(90deg,#00000012 0 1px,transparent 1px 3px),repeating-linear-gradient(0deg,#d8b483 0 25%,#c39a63 25% 50%,#a97e45 50% 75%,#e8d3a9 75% 100%);}
+.fam-herr{background:repeating-linear-gradient(45deg,#b98a4f 0 13px,#8f6636 13px 26px);}
+.fam-stone{background:repeating-linear-gradient(0deg,#c4c0b6 0 33%,#b0aa9e 33% 66%,#d9d6cf 66% 100%);}
+.fam-name{font-size:15px;font-weight:600;color:var(--ink);margin-top:14px;text-transform:uppercase;letter-spacing:.6px;text-align:center;}
+.fam-sub{font-size:12px;color:var(--grey);margin-top:3px;text-align:center;}
+/* google reviews */
+.rev-head{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:28px;}
+.rev-score{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--brown-soft);}
+.rev-score b{font-size:34px;color:var(--ink);font-weight:700;line-height:1;}
+.rev-stars{color:var(--gold);font-size:18px;letter-spacing:2px;}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+@media(max-width:820px){.rev-grid{grid-template-columns:1fr;}}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px;}
+.rev-card .rc-stars{color:var(--gold);font-size:13px;letter-spacing:1px;}
+.rev-card p{margin:0;font-size:13.5px;color:#3a4653;line-height:1.55;}
+.rev-card .rc-who{display:flex;align-items:center;gap:10px;margin-top:auto;}
+.rev-card .rc-av{width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;}
+.rev-card .rc-name{font-size:12.5px;font-weight:600;color:var(--ink);}
+.rev-card .rc-src{font-size:11px;color:var(--grey);}
+
+/* FOOTER */
+footer{background:#241a18;color:#d9cfc8;padding:48px 0 26px;font-size:13px;}
+.f-top{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;}
+.f-brand{max-width:280px;}
+.f-brand .flogo{font-size:21px;font-weight:700;color:#fff;margin-bottom:12px;}
+.f-social{display:flex;gap:12px;margin-top:14px;}
+.f-social span{width:34px;height:34px;border:1px solid #ffffff33;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;}
+footer h5{color:#fff;font-size:11px;margin:0 0 12px;text-transform:uppercase;letter-spacing:1.4px;}
+footer a,footer p{display:block;color:#d9cfc8;margin:0 0 8px;opacity:.82;}
+footer a:hover{opacity:1;}
+.f-fine{border-top:1px solid #ffffff1a;margin-top:30px;padding-top:16px;opacity:.55;font-size:11.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+/* FLOATING WA */
+.fab{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:80;cursor:pointer;border:none;}
+
+/* mobile sticky */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);padding:10px 14px;display:none;gap:10px;align-items:center;box-shadow:0 -4px 16px rgba(0,0,0,.08);}
+.mbar .mp{flex:1;}.mbar .mp .price{font-size:18px;}.mbar .mp .mpn{font-size:10px;color:var(--grey);text-transform:uppercase;letter-spacing:.6px;}
+.mbar .btn{padding:12px 14px;flex:0 0 auto;}
+@media(max-width:920px){.mbar{display:flex;}body{padding-bottom:74px;}.fab{bottom:84px;}}
+
+/* toast + modal */
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(140px);background:var(--brown);color:#fff;padding:14px 20px;border-radius:var(--r);font-size:13px;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:100;opacity:0;visibility:hidden;transition:transform .3s,opacity .3s,visibility .3s;}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible;}
+@media(max-width:920px){.toast{bottom:150px;}}
+.modal-bg{position:fixed;inset:0;background:rgba(43,37,35,.55);z-index:90;display:none;align-items:flex-start;justify-content:center;padding:40px 16px;overflow:auto;}
+.modal-bg.show{display:flex;}
+.modal{background:#fff;border-radius:var(--r);max-width:560px;width:100%;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+.modal h3{margin:0 0 4px;color:var(--ink);font-size:21px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.modal .msub{color:var(--grey);font-size:12px;margin-bottom:20px;text-transform:uppercase;letter-spacing:.6px;}
+.modal .x{float:right;font-size:24px;color:var(--grey);cursor:pointer;border:none;background:none;line-height:1;}
+.q-field{margin-bottom:14px;}
+.q-field label{display:block;font-size:10.5px;font-weight:600;color:var(--brown-soft);margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;}
+.q-field input,.q-field select{width:100%;padding:12px;border:1px solid var(--line);border-radius:var(--r);font-size:14px;font-family:inherit;color:var(--ink);}
+.q-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.drop{border:2px dashed var(--blue);border-radius:var(--r);padding:26px 20px;text-align:center;color:var(--grey);font-size:12.5px;cursor:pointer;background:#eef3f8;margin-bottom:16px;transition:.15s;}
+.drop:hover{background:#e4edf5;}
+.drop .drop-icon{font-size:30px;margin-bottom:6px;}
+.drop b{display:block;color:var(--blue);font-size:14.5px;margin-bottom:4px;}
+.drop span{display:block;}
+.drop .drop-or{margin-top:10px;color:var(--grey);font-size:11px;text-transform:uppercase;letter-spacing:.5px;}
+.q-result{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-top:6px;font-size:13.5px;}
+.q-result .rrow{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px dashed var(--line);}
+.q-result .rrow.tot{border-bottom:none;font-weight:700;font-size:16px;color:var(--ink);padding-top:9px;}
+#heroName{font-weight:700;}
+.skirt{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--brown-soft);margin-bottom:14px;cursor:pointer;}
+.skirt input{width:auto;}
+.skirt #skirtHint{color:var(--grey);}
+.room-row{display:grid;grid-template-columns:1fr 58px 58px 22px;gap:8px;margin-bottom:8px;align-items:center;}
+.room-row input{padding:9px;border:1px solid var(--line);border-radius:var(--r);font-size:13px;font-family:inherit;color:var(--ink);width:100%;}
+.room-x{border:none;background:none;color:var(--grey);font-size:18px;cursor:pointer;padding:0;}
+.bk-lab{display:block;font-size:10.5px;font-weight:600;color:var(--brown-soft);margin-bottom:8px;text-transform:uppercase;letter-spacing:.6px;}
+.day-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.day-chip{border:1px solid var(--line);background:#fff;border-radius:var(--r);padding:9px 12px;font-size:12px;cursor:pointer;font-family:inherit;color:var(--brown);}
+.day-chip.active{background:var(--brown);color:#fff;border-color:var(--brown);}
+.book-badge{cursor:pointer;}
+.book-badge:hover b{color:var(--blue);}
+/* comparison chart */
+.cmp-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--brown-soft);margin:2px 0 10px;}
+.cmp{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:6px;}
+.cmp th,.cmp td{border:1px solid var(--line);padding:8px 9px;text-align:center;}
+.cmp th{background:var(--cream);font-weight:600;text-transform:uppercase;letter-spacing:.3px;font-size:9.5px;color:var(--brown);}
+.cmp td:first-child,.cmp th:first-child{text-align:left;color:var(--brown-soft);font-weight:500;}
+.cmp .wo{background:#edf3ed;font-weight:700;color:var(--brown);}
+.cmp .yes{color:#1f8a4c;font-weight:700;}
+.cmp .no{color:#b45309;}
+.cmp-note{font-size:10px;color:var(--grey);margin:0 0 16px;font-style:italic;}
+/* CTA band */
+.cta-band{background:var(--brown);color:#fff;text-align:center;padding:48px 20px;}
+.cta-band h3{margin:0 0 8px;font-size:23px;font-weight:600;text-transform:uppercase;letter-spacing:1px;}
+.cta-band p{margin:0 auto 20px;opacity:.85;font-size:14px;max-width:520px;}
+.cta-band-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.cta-band .btn{width:auto;margin:0;padding:15px 24px;}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width:600px){
+  .wrap{padding:0 16px;}
+  section.blk{padding:42px 0;}
+  /* nav */
+  .nav-inner{height:58px;gap:10px;}
+  .logo{font-size:19px;}
+  .nav-right{gap:14px;}
+  .nav-right a:not(.cart){display:none;}      /* hide "0 items to compare", keep cart */
+  /* breadcrumb */
+  .crumb{padding:16px 0 0;}
+  /* buy box */
+  .buy h1{font-size:26px;}
+  .buy .desc{font-size:13px;}
+  .badges{grid-template-columns:1fr;gap:10px;}
+  .cta-secondary{flex-direction:column;}
+  .ecom{padding:18px;}
+  /* section headings */
+  .blk h2{font-size:21px;}
+  .blk .lead{font-size:13.5px;}
+  .blk-head{margin-bottom:24px;}
+  .tt-main{font-size:20px;}
+  .tt-sub{font-size:12.5px;}
+  .trust-tag{padding:28px 0 2px;}
+  .trust .n{font-size:23px;}
+  .trust-inner{padding:26px 0;gap:22px 14px;}
+  .cta-band{padding:40px 16px;}
+  .cta-band h3{font-size:20px;}
+  /* finishes / swatch selector */
+  .sw-seg{gap:6px;}
+  .sw-seg-btn{padding:10px 5px;}
+  .sw-seg-btn .t{font-size:11px;letter-spacing:.2px;}
+  .sw-seg-btn .c{font-size:8.5px;}
+  .fin-group-head{margin:24px 0 14px;}
+  .moodboard{padding:12px;gap:9px;}
+  /* spec / faq */
+  .spec td{padding:11px 13px;font-size:13px;}
+  .faq summary{padding:16px 16px;}
+  .faq p{padding:0 16px 18px;}
+  /* comparison table: scroll instead of overflow the page */
+  .cmp{display:block;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;}
+  /* modals + wizard */
+  .modal-bg{padding:14px 10px;}
+  .modal{padding:20px 18px;}
+  .modal h3{font-size:19px;}
+  .q-row{grid-template-columns:1fr;}
+  .wiz-q{font-size:18px;}
+  .wiz-rtitle{font-size:18px;}
+  #wizFoot{flex-wrap:wrap;}
+  /* mobile sticky action bar: drop the tagline, give the two CTAs equal room */
+  .mbar{padding:8px 12px;gap:8px;}
+  .mbar .mp{display:none;}
+  .mbar .btn{flex:1 1 0;min-width:0;padding:13px 8px;font-size:11px;letter-spacing:.4px;}
+  /* floating whatsapp */
+  .fab{width:50px;height:50px;font-size:25px;right:16px;}
+}
+@media(max-width:384px){
+  .sw-seg-btn .t{font-size:10px;}
+  .buy h1{font-size:22px;}
+  .nav-right{gap:10px;}
+  .sw-seg-btn{padding:9px 3px;}
+}
+</style>
+</head>
+<body>
+<!-- GTM_NOSCRIPT -->
+
+<!-- header removed -->
+
+<div class="wrap">
+  <div class="crumb"><a href="#">Home</a> / <a href="#">Vinyl Flooring</a> / <span id="crumbName">Valley Oak</span></div>
+
+  <div class="pdp">
+    <!-- GALLERY -->
+    <div class="gallery">
+      <div class="main-img">
+        <img id="mainImg" src="images/img-001.jpg" alt="Valley Oak">
+      </div>
+      <div class="disc">Digital vinyl flooring may appear different from the actual colour, texture and finish due to monitor settings.</div>
+      <div class="swatch-lab">Explore the finish — <span id="finishName">Valley Oak</span></div>
+      <div class="swatches" id="swatches"></div>
+    </div>
+
+    <!-- BUY BOX -->
+    <div class="buy">
+      <div class="eyebrow collection" id="collectionLab">Minimalist Collection · Wood Touch</div>
+      <h1 id="prodName">Valley Oak</h1>
+      <div class="code" id="prodCode">MN 04</div>
+      <p class="desc" id="prodDesc">Part of our Wood Touch series — it mimics the natural look and tactile feel of real wooden planks. The grains are less pronounced, ideal for those who love simplicity and sophistication in their flooring.</p>
+      <div class="chips">
+        <span class="chip-spec">100% virgin vinyl</span>
+        <span class="chip-spec">Fiberglass core</span>
+        <span class="chip-spec">0.5mm wear layer</span>
+        <span class="chip-spec">R10 · 100% waterproof</span>
+        <span class="chip-spec">25-yr warranty</span>
+      </div>
+
+      <!-- QUOTE CTA -->
+      <div class="ecom">
+        <div class="price-lite">Flooring priced for your rooms, supplied &amp; installed by our own crew.</div>
+        <div class="cta-col">
+          <button class="btn btn-primary btn-hero" onclick="startWizard('quote')">📐 Get your quote</button>
+          <div class="sample-note">Personalised pricing in about a minute. No upfront pressure.</div>
+          <div class="cta-links">
+            <a onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')">Prefer to chat? WhatsApp us →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="badges">
+        <div class="badge"><span class="bi">🛡️</span><span><b>25-year</b> residential warranty</span></div>
+        <div class="badge"><span class="bi">🦶</span><span><b>R10 slip-resistant</b> — wet-area safe</span></div>
+        <div class="badge"><span class="bi">💧</span><span><b>100% waterproof</b> &amp; scratch-resistant</span></div>
+        <div class="badge"><span class="bi">🔧</span><span>Supplied <b>&amp; installed by us</b></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FINISH FAMILIES -->
+<div class="fam-band"><div class="wrap">
+  <div class="fam-head"><div class="eyebrow">One premium build · three finishes</div><h2 style="font-size:24px;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:1.2px;margin:8px 0 0;">Find your finish</h2></div>
+  <div class="fam-grid">
+    <button class="fam-card" onclick="jumpFin('Oak')"><div class="fam-tile fam-wood"></div><div class="fam-name">Wood texture</div><div class="fam-sub">26 oak &amp; teak designs</div></button>
+    <button class="fam-card" onclick="jumpFin('Herringbone')"><div class="fam-tile fam-herr"></div><div class="fam-name">Herringbone</div><div class="fam-sub">4 statement designs</div></button>
+    <button class="fam-card" onclick="jumpFin('Stone')"><div class="fam-tile fam-stone"></div><div class="fam-name">Stone</div><div class="fam-sub">14 stone &amp; marble looks</div></button>
+  </div>
+</div></div>
+
+<!-- TRUST -->
+<div class="trust"><div class="wrap">
+  <div class="trust-tag">
+    <div class="tt-main">Vinyl done properly.</div>
+    <div class="tt-sub">The future of flooring — the vinyl you'll install <i>last</i>.</div>
+  </div>
+  <div class="trust-inner">
+    <div><div class="n">1,000+</div><div class="l">Homes floored &amp; loved</div></div>
+    <div><div class="n">100%</div><div class="l">Virgin vinyl · fiberglass core — never recycled or composite</div></div>
+    <div><div class="n">25-yr</div><div class="l">Warranty · R10 · 100% waterproof</div></div>
+    <div><div class="n">In-house</div><div class="l">Own install crew — never subcontracted</div></div>
+  </div>
+</div></div>
+
+<!-- VALUES -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head"><div class="eyebrow">Our values</div><h2>The Wood Origins difference</h2>
+      <p class="lead">Anyone can sell a plank. We're built around getting it installed right — on the day we promised, by people who own the outcome.</p></div>
+    <div class="why">
+      <div class="w"><div class="wi">🤝</div><h4>One team, start to finish</h4><p>Our own surveyors and installers own your project end to end — no subcontractor finger-pointing, and one contact who can actually fix things.</p></div>
+      <div class="w"><div class="wi">📅</div><h4>We commit to your date — and hit it</h4><p>We measure ourselves on turning up exactly when we said we would, so your renovation stays on schedule.</p></div>
+      <div class="w"><div class="wi">💬</div><h4>Proactive, personal updates</h4><p>A real person keeps you posted on WhatsApp before every visit — and most issues are resolved the same day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section class="blk cream">
+  <div class="wrap">
+    <div class="blk-head"><div class="eyebrow">Details</div><h2>Specifications</h2></div>
+    <table class="spec">
+      <tr><td>Slip resistance</td><td>R10 (DIN 51130) — safe in wet areas</td></tr>
+      <tr><td>Water resistance</td><td>100% waterproof core</td></tr>
+      <tr><td>Installation</td><td>Click-lock floating / glue-down</td></tr>
+      <tr><td>Thickness / wear layer</td><td>5.0 mm / 0.5 mm</td></tr>
+      <tr><td>Skirting</td><td>Matching skirting available</td></tr>
+      <tr><td>Warranty</td><td>25-year residential</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head"><div class="eyebrow">Why $6/sqft is great value</div><h2>How we compare</h2>
+      <p class="lead">The same budget buys a very different floor — and a very different install.</p></div>
+    <table class="cmp" style="max-width:840px;margin:0 auto;">
+      <tr><th>Feature</th><th class="wo">Wood Origins</th><th>Typical retailer</th><th>Budget online</th></tr>
+      <tr><td>Supply + install</td><td class="wo">$6–7.50/sqft</td><td>$7–10/sqft</td><td>from $4/sqft*</td></tr>
+      <tr><td>Wear layer</td><td class="wo">0.5 mm</td><td>0.3–0.5 mm</td><td>0.1–0.2 mm</td></tr>
+      <tr><td>100% waterproof core</td><td class="wo yes">✓</td><td class="yes">✓</td><td class="no">Varies</td></tr>
+      <tr><td>Slip resistance</td><td class="wo yes">R10 rated</td><td>Usually none</td><td class="no">None</td></tr>
+      <tr><td>Install team</td><td class="wo yes">✓ In-house</td><td class="no">Subcontracted</td><td class="no">Subcontracted</td></tr>
+      <tr><td>Free site survey</td><td class="wo yes">✓</td><td class="no">Sometimes</td><td class="no">✗</td></tr>
+      <tr><td>Warranty</td><td class="wo">25 years</td><td>5–10 years</td><td>1–2 years</td></tr>
+      <tr><td>Showroom to view</td><td class="wo yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+    </table>
+    <div class="cmp-note" style="max-width:840px;margin:10px auto 0;">Illustrative comparison of typical Singapore market offerings. *Budget online is supply-only, no installation.</div>
+  </div>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section class="blk cream">
+  <div class="wrap">
+    <div class="rev-head">
+      <div class="eyebrow">Loved by 1,000+ homeowners</div>
+      <div class="rev-score"><b>5.0</b><div><div class="rev-stars">★★★★★</div><div style="font-size:12px;color:var(--grey);">Real 5-star reviews on Google</div></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card"><div class="rc-stars">★★★★★</div><p>"Amazing vinyl flooring — so glad I found them. Very natural looking. We originally considered engineered wood, but this is really close, thinner and more durable. Perfect over existing flooring."</p><div class="rc-who"><div class="rc-av">I</div><div><div class="rc-name">Isabella Chen</div><div class="rc-src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="rc-stars">★★★★★</div><p>"Really impressed by the quality — it's been 3 months since I moved in. Love the colour, no spots where the vinyl sinks in, scratch-proof, and water doesn't seep in. Thank you Irvine for the meticulous QC!"</p><div class="rc-who"><div class="rc-av">K</div><div><div class="rc-name">K. K.</div><div class="rc-src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="rc-stars">★★★★★</div><p>"Our 2nd attempt at vinyl flooring and an excellent experience. Vince explained everything clearly, and the install team led by Kawsar was extremely efficient — they completed the whole place in a day. Highly recommend!"</p><div class="rc-who"><div class="rc-av">A</div><div><div class="rc-name">Amos Tan</div><div class="rc-src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="rc-stars">★★★★★</div><p>"Nice, pleasant and helpful service from Irvine. The team of 4 were very experienced and did a great job all in a day. Very happy — good materials and colours, and they even moved the furniture as they installed."</p><div class="rc-who"><div class="rc-av">G</div><div><div class="rc-name">Grace Yu</div><div class="rc-src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="rc-stars">★★★★★</div><p>"Went to a few vinyl providers and finally settled with Wood Origins — the outcome was excellent and we loved it. Prompt communication, installation on time with no delays. Will definitely reach out again."</p><div class="rc-who"><div class="rc-av">K</div><div><div class="rc-name">Kevin Tan</div><div class="rc-src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="rc-stars">★★★★★</div><p>"A great experience with Wood Origins. Vince was professional, knowledgeable and responsive throughout, with helpful recommendations from selection to installation. Very happy with our new vinyl flooring."</p><div class="rc-who"><div class="rc-av">K</div><div><div class="rc-name">Koh Hui Choon</div><div class="rc-src">Google review</div></div></div></div>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:var(--grey);font-size:12px;">Real 5-star reviews from Google customers.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head"><div class="eyebrow">Good to know</div><h2>Frequently asked questions</h2></div>
+    <div class="faq">
+      <details open><summary>What does "supply + install" include?</summary><p>Delivery, floor prep &amp; levelling, laying, matching skirting where needed, and cleanup. Removal of old flooring is quoted separately. A free site survey confirms scope before we start.</p></details>
+      <details><summary>Is it suitable for HDB and condos?</summary><p>Yes. It's a floating click-lock floor, so no hacking is needed in most HDB and condo units. Our own team handles any required notifications.</p></details>
+      <details><summary>Can I see it in person?</summary><p>Absolutely — visit our showroom at 33 Ubi Avenue 3, #01-67, open daily 10am–8pm, for a free one-to-one consultation.</p></details>
+      <details><summary>How do payment and deposit work?</summary><p>A 50% deposit confirms your booking and install date; the balance is due on completion. We don't take card details online — payment is arranged securely with our team.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="blk cream">
+  <div class="wrap">
+    <div class="blk-head"><div class="eyebrow">40+ designs · 3 finishes</div><h2>Explore our finishes</h2>
+      <p class="lead">From classic oak planks to statement herringbone and natural stone looks — every design in the same 25-year, R10 slip-resistant, 100% waterproof build.</p></div>
+    <div class="fin-tabs" id="finTabs"></div>
+    <div id="finGrid"></div>
+    <p class="lead" style="text-align:center;font-size:11.5px;margin-top:20px;">Swatch colours shown are indicative — real swatch photography drops in on build.</p>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band"><div class="wrap">
+  <h3>Not sure which floor is right?</h3>
+  <p>Send us your space and our team will recommend finishes and give you a firm price — usually within the hour.</p>
+  <div class="cta-band-btns">
+    <button class="btn btn-primary" onclick="startWizard('quote')">📐 Get your quote</button>
+    <button class="btn btn-wa" onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')">💬 WhatsApp us</button>
+  </div>
+</div></div>
+
+<!-- FOOTER -->
+<!-- footer removed -->
+
+<!-- FLOATING WHATSAPP -->
+<button class="fab" onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')" title="WhatsApp us">💬</button>
+
+<!-- MOBILE STICKY -->
+<div class="mbar">
+  <div class="mp"><div class="mpn" style="font-size:12.5px;color:var(--brown-soft);">Not sure? We'll guide you.</div></div>
+  <button class="btn btn-primary" onclick="startWizard('quote')">Get your quote</button>
+  <button class="btn btn-wa" onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')">WhatsApp us</button>
+</div>
+
+<!-- QUOTE MODAL -->
+<div class="modal-bg" id="quoteModal">
+  <div class="modal">
+    <button class="x" onclick="closeQuote()">×</button>
+    <h3>Get my quote</h3>
+    <div class="msub" id="qSub">Valley Oak · Supply + Install</div>
+
+    <div class="cmp-title">Why $6/sqft is great value — how we compare</div>
+    <table class="cmp">
+      <tr><th>Feature</th><th class="wo">Wood Origins</th><th>Typical retailer</th><th>Budget online</th></tr>
+      <tr><td>Supply + install</td><td class="wo">$6–7.50/sqft</td><td>$7–10/sqft</td><td>from $4/sqft*</td></tr>
+      <tr><td>Wear layer</td><td class="wo">0.5 mm</td><td>0.3–0.5 mm</td><td>0.1–0.2 mm</td></tr>
+      <tr><td>100% waterproof core</td><td class="wo yes">✓</td><td class="yes">✓</td><td class="no">Varies</td></tr>
+      <tr><td>Own install team</td><td class="wo yes">✓ In-house</td><td class="no">Subcontracted</td><td class="no">Subcontracted</td></tr>
+      <tr><td>Free site survey</td><td class="wo yes">✓</td><td class="no">Sometimes</td><td class="no">✗</td></tr>
+      <tr><td>Warranty</td><td class="wo">25 years</td><td>5–10 years</td><td>1–2 years</td></tr>
+      <tr><td>Slip resistance</td><td class="wo yes">R10 rated</td><td>Usually none</td><td class="no">None</td></tr>
+      <tr><td>Showroom to view</td><td class="wo yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+    </table>
+    <div class="cmp-note">Illustrative comparison of typical Singapore market offerings. *Budget online is supply-only, no installation.</div>
+
+    <div class="drop" onclick="toast('📎 Floorplan upload — connects to the quote generator')">
+      <div class="drop-icon">📐</div>
+      <b>Upload your floorplan for an instant quote</b>
+      <span>PDF, JPG or PNG · our AI reads the rooms &amp; sizes for you</span>
+      <span class="drop-or">— or enter a room manually below —</span>
+    </div>
+    <label class="bk-lab">Rooms to floor</label>
+    <div id="roomsList"></div>
+    <button type="button" class="btn btn-outline" style="width:100%;padding:10px;font-size:11.5px;margin-bottom:8px;letter-spacing:.4px;" onclick="addRoom()">+ Add another room</button>
+    <div style="font-size:11px;color:var(--grey);margin-bottom:14px;">Add only the rooms you want floored — most homes skip bathrooms &amp; kitchens. Flooring the whole place? Add each room, or just upload the floorplan.</div>
+    <div class="q-row">
+      <div class="q-field"><label>Unit</label><select id="qu" onchange="calcQuote()"><option value="m">metres</option><option value="ft">feet</option></select></div>
+      <div class="q-field"><label>Remove old floor?</label><select id="qr" onchange="calcQuote()"><option value="0">No</option><option value="1">Yes (+$1/sqft)</option></select></div>
+    </div>
+    <div class="q-field"><label>Matching skirting?</label><select id="qsk" onchange="setSkirting(this.value==='1')"><option value="1">With skirting — recommended</option><option value="0">No skirting (−$0.30/sqft)</option></select></div>
+    <button class="btn btn-primary" onclick="calcQuote()" style="width:100%;">Calculate estimate</button>
+    <div class="q-result" id="qResult" style="margin-top:14px;"></div>
+    <button class="btn btn-wa" onclick="wa()" style="width:100%;margin-top:12px;">💬 Drop us a message to lock in this pricing</button>
+    <p style="font-size:11px;color:var(--grey);margin:12px 0 0;">Estimate only — final price confirmed at your free site survey. No payment taken here.</p>
+  </div>
+</div>
+
+<!-- BOOKING MODAL -->
+<div class="modal-bg" id="bookModal">
+  <div class="modal">
+    <button class="x" onclick="closeBooking()">×</button>
+    <h3>Visit our showroom</h3>
+    <div class="msub">33 Ubi Ave 3, #01-67 · open daily 10am–8pm · book a one-to-one consultation</div>
+    <label class="bk-lab">Pick a day</label>
+    <div class="day-chips" id="dayChips"></div>
+    <div class="q-row">
+      <div class="q-field"><label>Preferred time</label><select id="bkTime"><option>10am–12pm</option><option>12pm–2pm</option><option>2pm–4pm</option><option>4pm–6pm</option><option>6pm–8pm</option></select></div>
+      <div class="q-field"><label>Your name</label><input type="text" id="bkName" placeholder="Name"></div>
+    </div>
+    <div class="q-field"><label>Mobile</label><input type="tel" id="bkPhone" placeholder="+65 ····"></div>
+    <button class="btn btn-wa" style="width:100%;margin-top:9px;" onclick="wa()">💬 WhatsApp us</button>
+    <p style="font-size:11px;color:var(--grey);margin:12px 0 0;">We'll confirm your slot on WhatsApp. Walk-ins welcome too.</p>
+  </div>
+</div>
+
+<!-- GUIDED WIZARD -->
+<div class="modal-bg wiz-modal" id="wizModal">
+  <div class="modal">
+    <button class="x" onclick="closeWiz()">×</button>
+    <h3 id="wizTitle">Get your quote</h3>
+    <div id="wizProg"></div>
+    <div id="wizBody"></div>
+    <div id="wizFoot"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// psf = supply + install $/sqft. Herringbone (122×610) = 7.50, all else = 6.00.
+/* Tracking IDs are populated from the saved admin settings on each page request. */
+const CONFIG = {
+  whatsapp:'6580585254',   // WO WhatsApp number (digits only, incl. country code)
+  leadWebhook:'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjIwNTZlMDYzZjA0MzI1MjZhNTUzMyI_3D_pc/IjU3NjcwNTY5MDYzZjA0MzU1MjY0NTUzMTUxMzEi_pc',   // Pabbly Connect webhook -> Airtable Contacts
+  metaPixelId:'__META_PIXEL_ID__',          // Meta Pixel ID, e.g. '1234567890'
+  gtmId:'__GTM_ID__',    // Google Tag Manager container
+  ga4Id:'',                // GA4, e.g. 'G-XXXXXXX'
+  googleAdsConversion:''   // Google Ads, e.g. 'AW-123456789/AbCdEfg'
+};
+/* Start only the trackers enabled in admin settings. */
+(function(){
+  try{
+    if(CONFIG.gtmId){window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});var gt=document.createElement('script');gt.async=1;gt.src='https://www.googletagmanager.com/gtm.js?id='+CONFIG.gtmId;document.head.appendChild(gt);}
+    if(CONFIG.metaPixelId){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',CONFIG.metaPixelId);fbq('track','PageView');}
+    if(CONFIG.ga4Id||CONFIG.googleAdsConversion){var id=CONFIG.ga4Id||CONFIG.googleAdsConversion.split('/')[0];var g=document.createElement('script');g.async=1;g.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(g);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());if(CONFIG.ga4Id)gtag('config',CONFIG.ga4Id);}
+  }catch(e){}
+})();
+const TRACK_KEYS=['utm_source','utm_medium','utm_campaign','utm_content','Ad_Set_Name'];
+const EVENT_NAMES=__EVENT_NAMES__;
+const META_STANDARD=new Set(['PageView','AddPaymentInfo','AddToCart','AddToWishlist','CompleteRegistration','Contact','CustomizeProduct','Donate','FindLocation','InitiateCheckout','Lead','Purchase','Schedule','Search','StartTrial','SubmitApplication','Subscribe','ViewContent']);
+const SESSION_ID=(sessionStorage.getItem('wo_session_id')||crypto.randomUUID()); sessionStorage.setItem('wo_session_id',SESSION_ID);
+(function(){const u=new URLSearchParams(location.search);let saved={};try{saved=JSON.parse(localStorage.getItem('wo_utm')||'{}')}catch(e){}TRACK_KEYS.forEach(k=>{if(!saved[k]&&u.get(k))saved[k]=u.get(k)});localStorage.setItem('wo_utm',JSON.stringify(saved));})();
+function attribution(){const u=JSON.parse(localStorage.getItem('wo_utm')||'{}');return {utmSource:u.utm_source||'',utmMedium:u.utm_medium||'',campaignName:u.utm_campaign||'',utmContent:u.utm_content||'',adSetName:u.Ad_Set_Name||'',adName:u.utm_content||'',sessionId:SESSION_ID};}
+const IS_TEST=new URLSearchParams(location.search).get('test')==='1';
+function eventKey(type){return type==='get_your_quote_clicked'?'quote_cta_clicked':type==='whatsapp_us_clicked'?'whatsapp_cta_clicked':type;}
+function track(type,params){const name=EVENT_NAMES[eventKey(type)]||type,id=crypto.randomUUID();const d=Object.assign({eventId:id,eventName:name,eventType:type,timestamp:new Date().toISOString(),pageUrl:location.href,testLive:IS_TEST},attribution(),params||{});try{if(window.fbq){if(META_STANDARD.has(name))fbq('track',name,d,{eventID:id});else fbq('trackCustom',name,d,{eventID:id});}}catch(e){}try{if(CONFIG.gtmId){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:name,event_id:id,event_type:type,...d});}}catch(e){}try{fetch('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,body:JSON.stringify(d)}).catch(()=>{});}catch(e){}}
+(function(){const d={eventId:crypto.randomUUID(),eventName:'PageView',eventType:'page_view',timestamp:new Date().toISOString(),pageUrl:location.href,testLive:IS_TEST,...attribution()};fetch('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,body:JSON.stringify(d)}).catch(()=>{});})();
+function waLink(msg){ return 'https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent(msg); }
+async function openWA(msg){const target=window.open('about:blank','_blank');track('whatsapp_us_clicked',{ctaName:'WhatsApp Us'});try{const a=attribution(),r=await fetch('/api/whatsapp-template?campaign='+encodeURIComponent(a.campaignName)+'&adset='+encodeURIComponent(a.adSetName)+'&ad='+encodeURIComponent(a.adName));const d=await r.json();if(d.matched&&d.hashcode)msg+='\n\nReference: '+d.hashcode;}catch(e){}if(target)target.location.href=waLink(msg);else location.href=waLink(msg);}
+let leadSubmitting=false;
+async function submitLead(kind,data){if(kind==='quote_submitted'&&leadSubmitting)return;leadSubmitting=true;const submissionId=crypto.randomUUID(),d=Object.assign({kind,source:'lvt-lp',page:location.href,submissionId},attribution(),data||{});try{const response=await fetch('/api/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({submissionId,name:d.name,phone:d.phone,email:d.email,answers:d,testLive:IS_TEST,...attribution()})});if(!response.ok)throw Error('Lead could not be saved');if(kind==='quote_submitted')track('form_submitted',{leadId:submissionId,pageSection:'quote'});if(!IS_TEST&&CONFIG.leadWebhook){const b=new URLSearchParams();Object.keys(d).forEach(k=>{const v=d[k];b.append(k,v&&typeof v==='object'?JSON.stringify(v):String(v??''))});if(navigator.sendBeacon)navigator.sendBeacon(CONFIG.leadWebhook,b);else await fetch(CONFIG.leadWebhook,{method:'POST',mode:'no-cors',keepalive:true,body:b});}return submissionId;}catch(e){leadSubmitting=false;track('form_submission_failed',{leadId:submissionId,pageSection:'quote'});toast('Your quote could not be sent. Please try again.');throw e;}}
+/* ===================================================================================== */
+
+const SKUS = [
+  {id:'valley',  name:'Valley Oak',   code:'MN 04', col:'Minimalist Collection · Wood Touch', img:'images/img-001.jpg', psf:6},
+  {id:'aria',    name:'Aria Oak',     code:'MN 01', col:'Minimalist Collection · Hybrid', img:'images/img-002.jpg', psf:6},
+  {id:'linen',   name:'Linen Oak',    code:'MN 02', col:'Minimalist Collection · Wood Touch', img:'images/img-003.jpg', psf:6},
+  {id:'mountain',name:'Mountain Oak', code:'MN 05', col:'Minimalist Collection · Wood Touch', img:'images/img-004.jpg', psf:6},
+  {id:'chestnut',name:'Chestnut Oak', code:'MN 07', col:'Minimalist Collection · Hybrid', img:'images/img-005.jpg', psf:6},
+  {id:'greymyst',name:'Mystic Grey Oak',code:'CT 03',col:'Contemporary Collection · EIR', img:'images/img-006.jpg', psf:6},
+];
+const REL = [
+  {name:'Aria Oak', img:'images/img-002.jpg'},
+  {name:'Linen Oak', img:'images/img-003.jpg'},
+  {name:'Mountain Oak', img:'images/img-004.jpg'},
+  {name:'Chestnut Oak', img:'images/img-005.jpg'},
+  {name:'Rustic Oak', img:'images/img-007.jpg'},
+];
+const SO_BOX = 75.00; // placeholder — supply-only $/box not yet provided
+let mode='si', sku=SKUS[0], cart=0, skirting=true;
+function effPsf(){ return skirting ? sku.psf : +(sku.psf - 0.30).toFixed(2); }
+function setSkirting(on){
+  skirting=on;
+  const chk=document.getElementById('skirtChk'); if(chk) chk.checked=on;
+  const sel=document.getElementById('qsk'); if(sel) sel.value=on?'1':'0';
+  setMode(mode);
+}
+
+function setSku(s){
+  sku=s;
+  setMode(mode); // refresh price for this SKU
+  document.getElementById('mainImg').src=(HERO_BY_TYPE[typeOf(s.name)]||RIMG[s.name]||HERO); /* hero routed by finish type */
+  document.getElementById('prodName').textContent=s.name;
+  document.getElementById('crumbName').textContent=s.name;
+  document.getElementById('finishName').textContent=s.name;
+  document.getElementById('prodCode').textContent=s.code;
+  document.getElementById('collectionLab').textContent=s.col;
+  document.getElementById('qSub').textContent=s.name+' · '+(mode==='si'?'Supply + Install':'Supply Only');
+  document.querySelectorAll('.sw').forEach(el=>el.classList.toggle('active',el.dataset.id===s.id));
+}
+function setMode(m){ mode=m; }  // price moved into the guided quote wizard
+
+// Full-range finish strip: all 42 SKUs grouped by finish type, real render where we have one, tone-chip otherwise.
+/* real render photos for all 42 finishes */
+const RIMG={
+"Andes Travertine":"images/img-008.jpg",
+"Baltic Stone":"images/img-009.jpg",
+"Aria Oak":"images/img-010.jpg",
+"Artic Oak":"images/img-011.jpg",
+"Ashstone":"images/img-012.jpg",
+"Aspen Teak":"images/img-013.jpg",
+"Bianca Oak":"images/img-014.jpg",
+"Bianco Oak":"images/img-015.jpg",
+"Blanche Oak":"images/img-016.jpg",
+"Caldera Oak":"images/img-017.jpg",
+"Carrera Oak":"images/img-018.jpg",
+"Cellar Oak":"images/img-019.jpg",
+"Chestnut Oak":"images/img-020.jpg",
+"Chianti Oak":"images/img-021.jpg",
+"Cognac Oak":"images/img-022.jpg",
+"Confetti":"images/img-023.jpg",
+"Cotton Oak":"images/img-024.jpg",
+"Cr\u00e8me":"images/img-025.jpg",
+"Cypress Oak":"images/img-026.jpg",
+"Danube Oak":"images/img-027.jpg",
+"Estuary Oak":"images/img-028.jpg",
+"Fossil Oak":"images/img-029.jpg",
+"Heritage":"images/img-030.jpg",
+"Imperial Oak":"images/img-031.jpg",
+"Linen Oak":"images/img-032.jpg",
+"Moonbeam Oak":"images/img-033.jpg",
+"Moss":"images/img-034.jpg",
+"Mountain Oak":"images/img-035.jpg",
+"Mystic Grey Oak":"images/img-036.jpg",
+"Nashville Oak":"images/img-037.jpg",
+"Nougat":"images/img-038.jpg",
+"Oyster":"images/img-039.jpg",
+"Pebble":"images/img-040.jpg",
+"Plum":"images/img-041.jpg",
+"Portland Grey":"images/img-042.jpg",
+"Quartz":"images/img-043.jpg",
+"Regency Teak":"images/img-044.jpg",
+"Roman Travertine":"images/img-045.jpg",
+"Rustic Oak":"images/img-046.jpg",
+"Toffee Oak":"images/img-047.jpg",
+"Valley Oak":"images/img-048.jpg",
+"Vecchio Oak":"images/img-049.jpg",
+"Whisper Oak":"images/img-050.jpg",
+"Wisteria Oak":"images/img-051.jpg",
+};
+const RENDER={}; SKUS.forEach(s=>RENDER[s.name]={img:s.img,col:s.col});
+/* accurate per-SKU floor colour sampled from renders */
+const RCOL={"Andes Travertine":"#9e8d7a","Aria Oak":"#928273","Artic Oak":"#978472","Ashstone":"#8a7f74","Aspen Teak":"#978067","Baltic Stone":"#5b524b","Bianca Oak":"#91775e","Bianco Oak":"#a09382","Blanche Oak":"#958164","Caldera Oak":"#837060","Carrera Oak":"#8e735b","Cellar Oak":"#63574b","Chestnut Oak":"#927356","Chianti Oak":"#8c6d53","Cognac Oak":"#5b493c","Confetti":"#9f978e","Cotton Oak":"#bab5af","Cr\u00e8me":"#908478","Cypress Oak":"#937355","Danube Oak":"#947659","Estuary Oak":"#95775b","Fossil Oak":"#8e765f","Heritage":"#9f917e","Imperial Oak":"#917153","Linen Oak":"#987e66","Moonbeam Oak":"#907153","Moss":"#7a796a","Mountain Oak":"#a19488","Mystic Grey Oak":"#635c54","Nashville Oak":"#756252","Nougat":"#a29688","Oyster":"#a79b8b","Pebble":"#917f6c","Plum":"#7f6959","Portland Grey":"#81766a","Quartz":"#938a7f","Regency Teak":"#8f7356","Roman Travertine":"#9a8b78","Rustic Oak":"#917256","Toffee Oak":"#988776","Valley Oak":"#967b64","Vecchio Oak":"#634c3a","Whisper Oak":"#7d6d5d","Wisteria Oak":"#8f6f51"};
+/* real plank-texture crop per finish */
+const RPLANK={"Andes Travertine":"images/img-052.jpg","Aria Oak":"images/img-053.jpg","Artic Oak":"images/img-054.jpg","Ashstone":"images/img-055.jpg","Aspen Teak":"images/img-056.jpg","Baltic Stone":"images/img-057.jpg","Bianca Oak":"images/img-058.jpg","Bianco Oak":"images/img-059.jpg","Blanche Oak":"images/img-060.jpg","Caldera Oak":"images/img-061.jpg","Carrera Oak":"images/img-062.jpg","Cellar Oak":"images/img-063.jpg","Chestnut Oak":"images/img-064.jpg","Chianti Oak":"images/img-065.jpg","Cognac Oak":"images/img-066.jpg","Confetti":"images/img-067.jpg","Cotton Oak":"images/img-068.jpg","Cr\u00e8me":"images/img-069.jpg","Cypress Oak":"images/img-070.jpg","Danube Oak":"images/img-071.jpg","Estuary Oak":"images/img-072.jpg","Fossil Oak":"images/img-073.jpg","Heritage":"images/img-074.jpg","Imperial Oak":"images/img-075.jpg","Linen Oak":"images/img-076.jpg","Moonbeam Oak":"images/img-077.jpg","Moss":"images/img-078.jpg","Mountain Oak":"images/img-079.jpg","Mystic Grey Oak":"images/img-080.jpg","Nashville Oak":"images/img-081.jpg","Nougat":"images/img-082.jpg","Oyster":"images/img-083.jpg","Pebble":"images/img-084.jpg","Plum":"images/img-085.jpg","Portland Grey":"images/img-086.jpg","Quartz":"images/img-087.jpg","Regency Teak":"images/img-088.jpg","Roman Travertine":"images/img-089.jpg","Rustic Oak":"images/img-090.jpg","Toffee Oak":"images/img-091.jpg","Valley Oak":"images/img-092.jpg","Vecchio Oak":"images/img-093.jpg","Whisper Oak":"images/img-094.jpg","Wisteria Oak":"images/img-095.jpg"};
+/* professional lifestyle hero (Michelle-supplied) */
+const HERO="images/img-096.jpg";
+const SW_TYPES=[['Oak','Wood texture'],['Herringbone','Herringbone'],['Stone','Stone']];
+let swTab=null;
+function typeOf(n){for(var i=0;i<SW.length;i++){if(SW[i][0]===n)return SW[i][1];}return 'Oak';}
+const HERO_BY_TYPE={Herringbone:HERO}; /* add Oak/Stone pro photos here to fix those hero images too */
+function pickSw(o){
+  const r=RENDER[o.name];
+  const s={ id:'sw-'+(o.code||o.name), name:o.name, code:o.code||'—',
+    col: r?r.col:(o.type==='Herringbone'?'Herringbone · LVT':o.type==='Stone'?'Stone Look · LVT':'Wood Texture · LVT'),
+    psf: o.type==='Herringbone'?7.50:6.00,
+    img: (r&&r.img)||RIMG[o.name]||document.getElementById('mainImg').src };
+  swTab=o.type;
+  setSku(s);
+  buildStrip(true);
+}
+function buildStrip(keepTab){
+  const wrap=document.getElementById('swatches'); wrap.innerHTML='';
+  const activeId='sw-'+((sku.code&&sku.code!=='—')?sku.code:sku.name);
+  // Default the selector to the finish type that holds the active SKU.
+  if(!keepTab||!swTab){ swTab=(SW_TYPES.find(([k])=>SW.some(s=>s[1]===k&&('sw-'+(s[3]||s[0]))===activeId))||SW_TYPES[0])[0]; }
+  // Type selector — obvious segmented control (Wood texture / Herringbone / Stone).
+  const seglab=document.createElement('div'); seglab.className='sw-seglab'; seglab.textContent='Choose your finish type';
+  wrap.appendChild(seglab);
+  const seg=document.createElement('div'); seg.className='sw-seg';
+  SW_TYPES.forEach(([key,label])=>{
+    const items=SW.filter(s=>s[1]===key);
+    const b=document.createElement('button'); b.type='button'; b.className='sw-seg-btn'+(key===swTab?' active':'');
+    b.innerHTML=`<span class="t">${label}</span><span class="c">${items.length} designs</span>`;
+    b.onclick=()=>{ if(typeOf(sku.name)!==key){ const f=SW.find(s=>s[1]===key); if(f) pickSw({name:f[0],type:f[1],tone:f[2],code:f[3]}); } else { swTab=key; buildStrip(true); } };
+    seg.appendChild(b);
+  });
+  wrap.appendChild(seg);
+  // Currently-selected finish note (persists across tabs).
+  const cur=document.createElement('div'); cur.className='sw-cur';
+  cur.innerHTML=`Selected: <b>${sku.name}${sku.code&&sku.code!=='—'?' · '+sku.code:''}</b>`;
+  wrap.appendChild(cur);
+  // Swatches for the chosen type only.
+  const row=document.createElement('div'); row.className='sw-row';
+  SW.filter(s=>s[1]===swTab).forEach(s=>{
+    const o={name:s[0],type:s[1],tone:s[2],code:s[3]};
+    const c=TONE[o.tone];
+    const bg=RPLANK[o.name]?`background:url('${RPLANK[o.name]}') center/cover`:`background:${RCOL[o.name]||c[1]}`;
+    const d=document.createElement('div'); d.className='gsw'; d.dataset.id='sw-'+(o.code||o.name); d.title=o.name+(o.code?' · '+o.code:'');
+    d.innerHTML=`<div class="gtile" style="${bg}"></div><span>${o.name}${o.code?'<em>'+o.code+'</em>':''}</span>`;
+    d.onclick=()=>pickSw(o);
+    row.appendChild(d);
+  });
+  wrap.appendChild(row);
+  const active=wrap.querySelector('[data-id="'+activeId+'"]'); if(active) active.classList.add('active');
+}
+const FIN={
+  oak:{count:26, items:SKUS.map(s=>({name:s.name,img:s.img}))},
+  herringbone:{count:4, items:[{name:'Vecchio Oak',img:'images/img-097.jpg'}]},
+  stone:{count:14, items:[{name:'Pebble',img:'images/img-098.jpg'},{name:'Portland Grey',img:'images/img-099.jpg'}]}
+};
+const TONE={
+  pale:['#e6d6bd','#d8c3a2','#c9b088','#efe2cd'], honey:['#d8b483','#c39a63','#a97e45','#e8d3a9'],
+  warm:['#c68a53','#b0743c','#95602f','#d8a56e'], deep:['#7a5233','#5f3d22','#472c17','#93693f'],
+  teak:['#9c7b57','#7f6041','#5f472e','#b39472'], grey:['#c3c4c0','#a7a9a5','#8b8d89','#d7d8d4'],
+  slt:['#d9d6cf','#c4c0b6','#b0aa9e','#e2e0d9'], smd:['#b8b3a8','#9c968a','#807a6e','#c9c4bb'],
+  trav:['#d8c7a6','#c3ae87','#ab9468','#e5d8bd'], mauve:['#b79aa6','#9c7d8b','#7f6270','#c9b1bb'],
+  moss:['#b6b8a3','#9aa085','#7e8468','#c8cab6'], terr:['#dcd7cc','#c9a9a0','#a7b0a2','#cfc6d0']
+};
+const SW=[
+  ['Cotton Oak','Oak','pale','IN 08'],['Bianco Oak','Oak','pale','IN 03'],['Blanche Oak','Oak','pale','SC 01'],['Whisper Oak','Oak','pale','SC 06'],['Linen Oak','Oak','pale','MN 02'],['Moonbeam Oak','Oak','pale','SC 03'],
+  ['Aria Oak','Oak','honey','MN 01'],['Valley Oak','Oak','honey','MN 04'],['Danube Oak','Oak','honey','MN 03'],['Caldera Oak','Oak','honey','MN 06'],['Mountain Oak','Oak','honey','MN 05'],['Toffee Oak','Oak','honey','SC 08'],
+  ['Rustic Oak','Oak','warm','IN 06'],['Chianti Oak','Oak','warm','SC 07'],['Cognac Oak','Oak','warm','CT 05'],['Estuary Oak','Oak','warm','SC 09'],['Nashville Oak','Oak','warm','CT 06'],
+  ['Chestnut Oak','Oak','deep','MN 07'],['Cellar Oak','Oak','deep','CT 04'],['Imperial Oak','Oak','deep','SC 04'],['Fossil Oak','Oak','deep','IN 07'],['Cypress Oak','Oak','deep','IN 05'],
+  ['Aspen Teak','Oak','teak','SC 05'],['Regency Teak','Oak','teak','CT 02'],['Mystic Grey Oak','Oak','grey','CT 03'],['Wisteria Oak','Oak','grey','MN 08'],
+  ['Vecchio Oak','Herringbone','deep','CT 01'],['Artic Oak','Herringbone','pale','IN 09'],['Carrera Oak','Herringbone','pale','IN 04'],['Bianca Oak','Herringbone','pale','SC 02'],
+  ['Pebble','Stone','slt','IN 01'],['Oyster','Stone','slt',''],['Quartz','Stone','slt',''],['Crème','Stone','slt',''],
+  ['Ashstone','Stone','smd','IN 02'],['Portland Grey','Stone','smd',''],['Moss','Stone','moss',''],
+  ['Roman Travertine','Stone','trav',''],['Nougat','Stone','trav',''],['Heritage','Stone','trav',''],['Plum','Stone','mauve',''],['Confetti','Stone','terr',''],
+  ['Andes Travertine','Stone','trav',''],['Baltic Stone','Stone','smd','']
+];
+let finType='Oak';
+const FIN_LABEL={Oak:'Wood texture',Herringbone:'Herringbone',Stone:'Stone'};
+function jumpFin(t){ const el=document.getElementById('fin-'+t); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }
+function renderFin(){
+  const counts={Oak:0,Herringbone:0,Stone:0}; SW.forEach(s=>counts[s[1]]++);
+  const tabs=document.getElementById('finTabs'); if(tabs) tabs.innerHTML='';
+  const g=document.getElementById('finGrid'); g.innerHTML='';
+  [['Oak','Wood texture'],['Herringbone','Herringbone'],['Stone','Stone']].forEach(([key,label])=>{
+    const head=document.createElement('div'); head.className='fin-group-head'; head.id='fin-'+key;
+    head.innerHTML=`<h3>${label}</h3><span>${counts[key]} designs</span>`; g.appendChild(head);
+    const grid=document.createElement('div'); grid.className='swatch-grid';
+    SW.filter(s=>s[1]===key).forEach(s=>{
+      const c=TONE[s[2]];
+      const d=document.createElement('div'); d.className='sw-chip';
+      d.innerHTML=`<div class="sw-tile" style="${RPLANK[s[0]]?`background:url('${RPLANK[s[0]]}') center/cover`:`background:repeating-linear-gradient(0deg,${c[0]} 0 25%,${c[1]} 25% 50%,${c[2]} 50% 75%,${c[3]} 75% 100%)`}"></div><span>${s[0]}${s[3]?'<em>'+s[3]+'</em>':''}</span>`;
+      d.onclick=()=>toast('↗ '+s[0]+(s[3]?' ('+s[3]+')':'')+' — opens its product page');
+      grid.appendChild(d);
+    });
+    g.appendChild(grid);
+  });
+}
+
+function buySample(){cart++;document.getElementById('cartCount').textContent=cart;track('sample_add',{sku:sku.name});toast('🧾 '+sku.name+' sample added — $5.00 (refunded on order)');}
+function wa(){ openWA("Hi Wood Origins! I'm interested in "+sku.name+" vinyl flooring. Could you help me?"); }
+function csChat(){toast('💬 Opens WhatsApp with our customer support team for supply-only box pricing & stock');}
+function openQuote(){ if(mode==='so'){ csChat(); return; } document.getElementById('quoteModal').classList.add('show');renderRooms();calcQuote();}
+function closeQuote(){document.getElementById('quoteModal').classList.remove('show');}
+document.getElementById('quoteModal').addEventListener('click',e=>{if(e.target.id==='quoteModal')closeQuote();});
+
+let bkDay='Today';
+function openBooking(){ buildDays(); document.getElementById('bookModal').classList.add('show'); }
+function closeBooking(){ document.getElementById('bookModal').classList.remove('show'); }
+document.getElementById('bookModal').addEventListener('click',e=>{if(e.target.id==='bookModal')closeBooking();});
+function buildDays(){
+  const el=document.getElementById('dayChips'); el.innerHTML='';
+  const dn=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], now=new Date();
+  for(let i=0;i<6;i++){
+    const d=new Date(now.getTime()+i*86400000);
+    const lab=(i===0?'Today':i===1?'Tomorrow':dn[d.getDay()])+' '+d.getDate()+'/'+(d.getMonth()+1);
+    const b=document.createElement('button'); b.type='button'; b.className='day-chip'+(i===0?' active':''); b.textContent=lab;
+    b.onclick=()=>{ document.querySelectorAll('.day-chip').forEach(x=>x.classList.remove('active')); b.classList.add('active'); bkDay=lab; };
+    el.appendChild(b);
+  }
+  bkDay='Today';
+}
+function confirmBooking(){
+  const n=document.getElementById('bkName').value.trim(), t=document.getElementById('bkTime').value, ph=document.getElementById('bkPhone').value.trim();
+  submitLead('booking_request',{name:n,phone:ph,day:bkDay,time:t});
+  closeBooking();
+  openWA("Hi Wood Origins! I'd like to book a showroom visit.\n\nName: "+n+"\nMobile: "+ph+"\nPreferred: "+bkDay+", "+t);
+}
+
+let ROOMS=[{name:'Living / Dining',w:5,l:4},{name:'Bedroom',w:3,l:3}];
+function renderRooms(){
+  const el=document.getElementById('roomsList'); if(!el) return; el.innerHTML='';
+  ROOMS.forEach((r,i)=>{
+    const d=document.createElement('div'); d.className='room-row';
+    d.innerHTML=`<input type="text" placeholder="Room (optional)" value="${r.name||''}" oninput="ROOMS[${i}].name=this.value">`+
+      `<input type="number" placeholder="W" value="${r.w||''}" oninput="ROOMS[${i}].w=parseFloat(this.value)||0;calcQuote()">`+
+      `<input type="number" placeholder="L" value="${r.l||''}" oninput="ROOMS[${i}].l=parseFloat(this.value)||0;calcQuote()">`+
+      `<button type="button" class="room-x" title="Remove" onclick="ROOMS.splice(${i},1);renderRooms();calcQuote()" ${ROOMS.length<=1?'style="visibility:hidden"':''}>×</button>`;
+    el.appendChild(d);
+  });
+}
+function addRoom(){ ROOMS.push({name:'',w:0,l:0}); renderRooms(); calcQuote(); }
+function calcQuote(){
+  const unit=document.getElementById('qu').value, removal=document.getElementById('qr').value==='1';
+  let sqft=0;
+  ROOMS.forEach(r=>{ if(r.w>0&&r.l>0){ sqft += unit==='ft' ? r.w*r.l : (r.w*r.l)*10.7639; } });
+  sqft=Math.round(sqft);
+  const billed=Math.round(sqft*1.08);
+  let material, breakdown;
+  if(mode==='si'){ const p=effPsf(); material=billed*p; breakdown=`${billed} sqft × $${p.toFixed(2)}/sqft (incl. install${skirting?' + skirting':', no skirting'})`; }
+  else{ const boxes=Math.ceil(billed/23); material=boxes*SO_BOX; breakdown=`${boxes} box(es) × $${SO_BOX.toFixed(2)} (23 sqft/box)`; }
+  const rem=removal?sqft*1:0, sub=material+rem, gst=sub*0.09, grand=sub+gst, dep=grand*0.5;
+  const f=n=>'$'+n.toLocaleString('en-SG',{minimumFractionDigits:2,maximumFractionDigits:2});
+  document.getElementById('qResult').innerHTML=
+    `<div class="rrow"><span>Area (${sqft} sqft + 8% wastage)</span><span>${billed} sqft</span></div>`+
+    `<div class="rrow"><span>${breakdown}</span><span>${f(material)}</span></div>`+
+    (rem?`<div class="rrow"><span>Remove old floor</span><span>${f(rem)}</span></div>`:'')+
+    `<div class="rrow"><span>GST (9%)</span><span>${f(gst)}</span></div>`+
+    `<div class="rrow tot"><span>Estimated total</span><span>${f(grand)}</span></div>`+
+    `<div class="rrow"><span>50% deposit to book</span><span>${f(dep)}</span></div>`;
+}
+
+let toastT;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600);}
+
+/* ---------- GUIDED WIZARDS ---------- */
+const wesc=s=>String(s==null?'':s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+const WROOMS_DEFAULT=()=>[{name:'Living / Dining',w:5,l:4},{name:'Bedroom',w:3,l:3}];
+let WROOMS=WROOMS_DEFAULT(), wizFlow=null, wizKey='', wizStep=0, wizAns={}, wizSent=false;
+let completedQuoteSteps=new Set();
+const FLOWS={
+  quote:{ title:'Get your quote', steps:[
+    {type:'single',key:'scope',q:'What are we flooring?',opts:['Whole home','Selected rooms','One room']},
+    {type:'rooms',key:'rooms',q:'Add your rooms & rough sizes',help:"Rough numbers are fine — skip bathrooms & kitchens if you're not flooring them. Not sure of exact sizes? A rough estimate is all we need."},
+    {type:'single',key:'skirting',q:'Include matching skirting?',help:'Most homes finish the edges with matching skirting.',opts:['Yes — recommended','No']},
+    {type:'single',key:'existing',q:"What's your existing flooring?",help:'This lets us price any removal or prep work accurately.',opts:['Laminate','Vinyl','Parquet / timber','Tiles','Bare / not sure']},
+    {type:'single',key:'removeLV',q:'Remove the existing flooring?',help:'Laminate & vinyl can often be overlaid — removal is optional (+$1/sqft).',opts:['Yes, remove it','No, overlay'],when:a=>a.existing==='Laminate'||a.existing==='Vinyl'},
+    {type:'single',key:'hacking',q:'Is hacking required?',help:"Timber & parquet usually need hacking out (+$3.50/sqft). Not sure? Our surveyor confirms on-site.",opts:['Yes','No','Not sure'],when:a=>a.existing==='Parquet / timber'},
+    {type:'single',key:'screed',q:'Is screed & levelling required?',help:"A level base gives the best finish (+$6/sqft). Not sure? We'll confirm on-site.",opts:['Yes','No','Not sure'],when:a=>a.existing==='Parquet / timber'},
+    {type:'info',key:'compare',q:'Why Wood Origins is worth it',help:"Two minutes on what actually makes a floor last — and where we don't cut corners."},
+    {type:'contact',key:'contact',q:'Where should our sales rep reach you?'},
+    {type:'result',key:'result'}
+  ]},
+  compare:{ title:'Design your dream floor', steps:[
+    {type:'single',key:'mood',q:"First — what's the mood of your dream home?",help:'Go with your gut. ✨',opts:['☀️ Bright & airy','🔥 Warm & cosy','🌙 Bold & dramatic','🍃 Natural & earthy','⚪ Calm & minimal']},
+    {type:'single',key:'palette',q:"Pick the palette you're drawn to",opts:['🍯 Honey oak','🏖️ Pale sand','☕ Rich espresso','🌫️ Cool grey','🪨 Stone & marble']},
+    {type:'single',key:'style',q:'Your home-style icon?',opts:['Scandinavian','Japandi','Modern luxe','Rustic farmhouse','Industrial loft']},
+    {type:'single',key:'life',q:'A perfect weekend at home looks like…',opts:['👯 Hosting & entertaining','📚 Cosy & quiet','🐾 Kids & pets everywhere','💻 Working from home']},
+    {type:'contact',key:'contact',q:'Where shall we send your moodboard?'},
+    {type:'result',key:'result'}
+  ]}
+};
+function startWizard(key){ if(key==='quote'){track('get_your_quote_clicked',{ctaName:'Get Your Quote'});track('form_started',{pageSection:'quote'});WROOMS=WROOMS_DEFAULT();leadSubmitting=false;completedQuoteSteps=new Set();} wizKey=key; wizFlow=FLOWS[key]; wizStep=0; wizAns={}; wizSent=false;
+  document.getElementById('wizTitle').textContent=wizFlow.title; document.getElementById('wizModal').classList.add('show'); renderWiz(); }
+function closeWiz(){ document.getElementById('wizModal').classList.remove('show'); }
+function wizUpload(){ toast('📎 Floorplan upload — connects to the quote generator'); }
+function stepOn(s){ return !s.when || s.when(wizAns); }
+function renderWiz(){
+  const step=wizFlow.steps[wizStep], prog=document.getElementById('wizProg');
+  if(step.type==='result'){ prog.innerHTML=''; }
+  else{
+    const act=wizFlow.steps.filter(s=>stepOn(s)&&s.type!=='result'), cur=act.indexOf(step)+1, total=act.length;
+    prog.innerHTML=`<div class="wiz-bar"><div style="width:${(cur/total)*100}%"></div></div><div class="wiz-count">Step ${cur} of ${total}</div>`;
+  }
+  let html='';
+  if(step.type!=='result') html+=`<div class="wiz-q">${wesc(step.q)}</div>`;
+  if(step.help) html+=`<div class="wiz-help">${wesc(step.help)}</div>`;
+  if(step.type==='single') html+='<div class="wiz-opts">'+step.opts.map((o,i)=>`<button type="button" class="wiz-opt${wizAns[step.key]===o?' sel':''}" onclick="wizPick(${i})">${wesc(o)}</button>`).join('')+'</div>';
+  else if(step.type==='multi') html+='<div class="wiz-opts">'+step.opts.map((o,i)=>`<button type="button" class="wiz-opt${(wizAns[step.key]||[]).includes(o)?' sel':''}" onclick="wizToggle(${i})">${wesc(o)}</button>`).join('')+'</div>';
+  else if(step.type==='rooms') html+='<div id="wRoomsList"></div><button type="button" class="btn btn-outline" style="width:100%;padding:10px;font-size:11.5px;" onclick="wizAddRoom()">+ Add another room</button>';
+  else if(step.type==='info') html+='<div class="wiz-info">'+worthItHtml()+'</div>';
+  else if(step.type==='contact'){
+    html+=`<div class="q-field"><label>Your name</label><input type="text" value="${wesc(wizAns.name)}" oninput="wizAns.name=this.value;wizSync()"></div>`;
+    html+=`<div class="q-field"><label>Mobile number (WhatsApp)</label><input type="tel" placeholder="+65" value="${wesc(wizAns.phone)}" oninput="wizAns.phone=this.value;wizSync()"></div>`;
+    html+=`<label class="wiz-consent"><input type="checkbox" id="wizConsent" ${wizAns.consent?'checked':''} onchange="wizAns.consent=this.checked;wizSync()"> <span>I agree to be contacted by Wood Origins about my enquiry (WhatsApp/call). No spam. <a href="https://woodorigins.sg/" target="_blank" onclick="event.stopPropagation()">Privacy</a></span></label>`;
+  } else if(step.type==='result') html+=wizResult();
+  document.getElementById('wizBody').innerHTML=html;
+  if(step.type==='rooms') wizRenderRooms();
+  let f='';
+  if(step.type==='result'){
+    wizCapture();
+    if(wizKey==='compare') f=`<button type="button" class="btn btn-primary" onclick="openVisualiser()">🛋️ See it in my room</button><button type="button" class="btn btn-wa" onclick="wizSend()">💬 WhatsApp my picks</button>`;
+    else f=`<button type="button" class="btn btn-wa" onclick="wizSend()">💬 WhatsApp my quote</button><button type="button" class="btn btn-outline wiz-back" onclick="closeWiz()">Done</button>`;
+  } else {
+    const back=`<button type="button" class="btn btn-outline wiz-back" onclick="wizBack()" ${wizStep===0?'style="visibility:hidden"':''}>Back</button>`;
+    const label=step.type==='contact'?(wizKey==='quote'?'See my quote':'Get my recommendations'):'Continue';
+    f=back+`<button type="button" class="btn btn-primary" id="wizNext" onclick="wizNext()">${label}</button>`;
+  }
+  document.getElementById('wizFoot').innerHTML=f; wizSync();
+}
+function compareTableHtml(){ return '<table class="cmp"><tr><th>Feature</th><th class="wo">Wood Origins</th><th>Typical retailer</th><th>Budget online</th></tr>'+
+  '<tr><td>Wear layer</td><td class="wo">0.5 mm</td><td>0.3–0.5 mm</td><td>0.1–0.2 mm</td></tr>'+
+  '<tr><td>Slip resistance</td><td class="wo yes">R10</td><td>Usually none</td><td class="no">None</td></tr>'+
+  '<tr><td>Install team</td><td class="wo yes">In-house</td><td class="no">Subcontracted</td><td class="no">Subcontracted</td></tr>'+
+  '<tr><td>Warranty</td><td class="wo">25 years</td><td>5–10 yrs</td><td>1–2 yrs</td></tr>'+
+  '<tr><td>Free site survey</td><td class="wo yes">✓</td><td class="no">Sometimes</td><td class="no">✗</td></tr></table>'+
+  '<div class="cmp-note">Illustrative comparison of typical Singapore market offerings.</div>'; }
+function openVisualiser(){ window.open('https://showroom.woodorigins.sg','_blank'); }
+function worthItHtml(){
+  const pts=[
+    ['100% virgin vinyl, fiberglass-reinforced','Cheaper brands cut cost with <b>composite or recycled cores</b> that warp, curl and off-gas over time. Ours is <b>pure virgin vinyl</b> with a <b>fiberglass layer</b> for dimensional stability — it lies flat and stays flat.'],
+    ['It\'s the wear layer, not the sticker price','The clear top coat takes all the wear. Ours is <b>0.5&nbsp;mm commercial-grade</b>; budget vinyl often hides 0.1–0.2&nbsp;mm that scuffs through in a few years — then it\'s a full re-do.'],
+    ['Waterproof core + R10 slip rating','A <b>100% waterproof</b> core and <b>R10 slip resistance</b> — built for Singapore homes, safe underfoot even in the kitchen or near the bathroom.'],
+    ['Laid by our own crew, backed 25 years','A great plank installed badly still lifts at the edges. Our <b>in-house crew</b> lays every floor and we back it <b>25 years</b> — the clearest sign we stand behind it.']
+  ];
+  let h='<p class="worth-intro">Not all vinyl is equal. Here\'s what actually decides whether a floor lasts — and where we don\'t cut corners:</p><div class="worth-list">';
+  pts.forEach((p,i)=>{ h+=`<div class="worth-item" style="animation-delay:${(i*0.12).toFixed(2)}s"><div class="worth-num">${String(i+1).padStart(2,'0')}</div><div><div class="worth-h">${p[0]}</div><div class="worth-p">${p[1]}</div></div></div>`; });
+  h+='</div><div class="worth-proof">And here\'s how the same budget stacks up:</div>'+compareTableHtml();
+  return h;
+}
+function wizSync(){ const step=wizFlow.steps[wizStep], nx=document.getElementById('wizNext'); if(!nx)return;
+  let ok=true;
+  if(step.type==='single')ok=!!wizAns[step.key];
+  else if(step.type==='multi')ok=(wizAns[step.key]||[]).length>0;
+  else if(step.type==='contact')ok=!!((wizAns.name||'').trim()&&(wizAns.phone||'').trim()&&wizAns.consent);
+  nx.disabled=!ok; nx.style.opacity=ok?'1':'.5';
+}
+function wizPick(i){ const step=wizFlow.steps[wizStep]; wizAns[step.key]=step.opts[i]; renderWiz(); setTimeout(wizNext,150); }
+function wizToggle(i){ const step=wizFlow.steps[wizStep], a=wizAns[step.key]||[], v=step.opts[i], j=a.indexOf(v); if(j>=0)a.splice(j,1);else a.push(v); wizAns[step.key]=a; renderWiz(); }
+function wizBack(){ for(let j=wizStep-1;j>=0;j--){ if(stepOn(wizFlow.steps[j])){wizStep=j;renderWiz();return;} } }
+function wizNext(){ const step=wizFlow.steps[wizStep];
+  if((step.type==='single'&&!wizAns[step.key])||(step.type==='multi'&&!(wizAns[step.key]||[]).length)||(step.type==='contact'&&!((wizAns.name||'').trim()&&(wizAns.phone||'').trim()&&wizAns.consent))){if(wizKey==='quote')track('form_validation_error',{pageSection:step.key});return;}
+  if(wizKey==='quote'&&!completedQuoteSteps.has(wizStep)){completedQuoteSteps.add(wizStep);track('form_step_'+(wizStep+1)+'_completed',{pageSection:step.key});}
+  for(let j=wizStep+1;j<wizFlow.steps.length;j++){ if(stepOn(wizFlow.steps[j])){wizStep=j;renderWiz();return;} }
+}
+function wizRenderRooms(){ const el=document.getElementById('wRoomsList'); if(!el)return; el.innerHTML='';
+  WROOMS.forEach((r,i)=>{ const d=document.createElement('div'); d.className='room-row';
+    d.innerHTML=`<input type="text" placeholder="Room (optional)" value="${wesc(r.name)}" oninput="WROOMS[${i}].name=this.value">`+
+      `<input type="number" placeholder="W" value="${r.w||''}" oninput="WROOMS[${i}].w=parseFloat(this.value)||0">`+
+      `<input type="number" placeholder="L" value="${r.l||''}" oninput="WROOMS[${i}].l=parseFloat(this.value)||0">`+
+      `<button type="button" class="room-x" onclick="WROOMS.splice(${i},1);wizRenderRooms()" ${WROOMS.length<=1?'style="visibility:hidden"':''}>×</button>`;
+    el.appendChild(d); });
+}
+function wizAddRoom(){ WROOMS.push({name:'',w:0,l:0}); wizRenderRooms(); }
+function wizResult(){ return wizKey==='quote'?quoteResult():compareResult(); }
+function quoteResult(){
+  skirting=wizAns.skirting!=='No'; const nm=wesc(wizAns.name||'you');
+  let sqft=0; WROOMS.forEach(r=>{ if(r.w>0&&r.l>0) sqft+=r.w*r.l*10.7639; }); sqft=Math.round(sqft);
+  const f=n=>'$'+n.toLocaleString('en-SG',{minimumFractionDigits:2,maximumFractionDigits:2});
+  if(!sqft) return `<div class="wiz-done">✓</div><div class="wiz-rtitle">Almost there, ${nm}</div><p class="wiz-rtext">Add a room size and we'll estimate on the spot.</p>`;
+  const billed=Math.round(sqft*1.08), p=effPsf(), material=billed*p;
+  const ex=wizAns.existing; let rem=0,hack=0,scr=0; const notes=[];
+  if((ex==='Laminate'||ex==='Vinyl')&&wizAns.removeLV==='Yes, remove it') rem=sqft*1;
+  if(ex==='Parquet / timber'){
+    if(wizAns.hacking==='Yes') hack=sqft*3.5;
+    if(wizAns.screed==='Yes') scr=sqft*6;
+    if(wizAns.hacking==='Not sure'||wizAns.screed==='Not sure') notes.push('Hacking / screed to be confirmed on your free site survey.');
+  }
+  const sub=material+rem+hack+scr, gst=sub*0.09, grand=sub+gst, dep=grand*0.5;
+  return `<div class="wiz-done">✓</div><div class="wiz-rtitle">Your indicative quote</div>
+    <img class="wiz-hero-img" src="${sku.img}" alt="${wesc(sku.name)}">
+    <p class="wiz-rtext">${wesc(sku.name)} · ${billed} sqft incl. 8% wastage · ${skirting?'with skirting':'no skirting'}</p>
+    <div class="q-result">
+      <div class="rrow"><span>${billed} sqft × ${f(p)}/sqft (incl. install)</span><span>${f(material)}</span></div>
+      ${rem?`<div class="rrow"><span>Remove laminate/vinyl · $1.00/sqft</span><span>${f(rem)}</span></div>`:''}
+      ${hack?`<div class="rrow"><span>Hacking · $3.50/sqft</span><span>${f(hack)}</span></div>`:''}
+      ${scr?`<div class="rrow"><span>Screed &amp; level · $6.00/sqft</span><span>${f(scr)}</span></div>`:''}
+      <div class="rrow"><span>GST (9%)</span><span>${f(gst)}</span></div>
+      <div class="rrow tot"><span>Estimated total</span><span>${f(grand)}</span></div>
+      <div class="rrow"><span>50% deposit to book</span><span>${f(dep)}</span></div>
+    </div>
+    <p class="wiz-fine">A Wood Origins sales rep will get in touch with ${nm} to confirm details and finalise your quote. ${notes.join(' ')} Indicative only — firm price confirmed free on-site.</p>`;
+}
+const PALETTE_MAP={'🍯 Honey oak':['Valley Oak','Aria Oak','Rustic Oak'],'🏖️ Pale sand':['Cotton Oak','Blanche Oak','Linen Oak'],'☕ Rich espresso':['Chestnut Oak','Cellar Oak','Vecchio Oak'],'🌫️ Cool grey':['Mystic Grey Oak','Portland Grey','Whisper Oak'],'🪨 Stone & marble':['Carrera Oak','Pebble','Roman Travertine']};
+function toneFor(n){ const s=SW.find(x=>x[0]===n); return s?TONE[s[2]]:TONE.honey; }
+function compareResult(){
+  const picks=PALETTE_MAP[wizAns.palette]||['Valley Oak','Cotton Oak','Chestnut Oak'];
+  const chips=picks.map(n=>{const c=toneFor(n); const s=SW.find(x=>x[0]===n); const code=s&&s[3]?s[3]:''; return `<div class="mood-chip"><div class="mood-tile" style="background:repeating-linear-gradient(0deg,${c[0]} 0 25%,${c[1]} 25% 50%,${c[2]} 50% 75%,${c[3]} 75% 100%)"></div><span>${wesc(n)}${code?'<em>'+wesc(code)+'</em>':''}</span></div>`;}).join('');
+  const nm=wesc(wizAns.name||'you'), mood=wesc((wizAns.mood||'').replace(/^\S+\s/,'').toLowerCase()), style=wesc((wizAns.style||'').toLowerCase());
+  return `<div class="wiz-done" style="background:var(--blue);">✨</div><div class="wiz-rtitle">Your dream-floor moodboard</div>
+    <p class="wiz-rtext">${nm}, your <b>${mood||'signature'}</b>${style?', '+style:''} look calls for these three finishes:</p>
+    <div class="moodboard">${chips}</div>
+    <p class="wiz-fine"><b>Now make it real →</b> upload a photo of your room and see these on your actual floor.</p>`;
+}
+function wizCapture(){
+  if(wizSent) return; wizSent=true;
+  const nm=wizAns.name||'', ph=wizAns.phone||'';
+  if(wizKey==='quote') submitLead('quote_submitted',{...wizAns,name:nm,phone:ph,sku:sku.name,rooms:WROOMS}).catch(()=>{wizSent=false;});
+}
+function wizSend(){
+  const nm=wizAns.name||'', ph=wizAns.phone||'';
+  let msg;
+  if(wizKey==='quote'){
+    const rooms=WROOMS.filter(r=>r.w&&r.l).map(r=>(r.name||'Room')+' '+r.w+'×'+r.l).join(', ');
+    msg="Hi Wood Origins! I'd like to lock in my quote.\n\nName: "+nm+"\nMobile: "+ph+"\nFloor: "+sku.name+"\nRooms: "+rooms+"\nSkirting: "+(wizAns.skirting||'-')+"\nExisting floor: "+(wizAns.existing||'-');
+  } else {
+    msg="Hi Wood Origins! I did the dream-floor quiz — here are my picks.\n\nName: "+nm+"\nMobile: "+ph+"\nMood: "+(wizAns.mood||'')+"\nPalette: "+(wizAns.palette||'')+"\nStyle: "+(wizAns.style||'');
+  }
+  wizCapture(); closeWiz(); openWA(msg);
+}
+document.getElementById('wizModal').addEventListener('click',e=>{if(e.target.id==='wizModal')closeWiz();});
+
+setSku(SKUS[0]);setMode('si');renderRooms();renderFin();buildStrip();document.addEventListener('click',e=>{if(!e.target.closest('.sw-dd'))document.querySelectorAll('.sw-dd.open').forEach(x=>x.classList.remove('open'));});
+/* clean floor close-ups on the "Find your finish" family cards */
+const FAMIMG={"wood":"images/img-100.jpg","herr":"images/img-101.jpg","stone":"images/img-102.jpg"};
+[['fam-wood','wood'],['fam-herr','herr'],['fam-stone','stone']].forEach(function(p){var el=document.querySelector('.'+p[0]);var img=FAMIMG[p[1]];if(el&&img){el.style.background="url('"+img+"') center/cover";}});
+</script>
+</body>
+</html>
