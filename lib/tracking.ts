@@ -29,11 +29,8 @@ export async function readSettings(): Promise<TrackingSettings> {
  const row = await database().prepare("SELECT meta_pixel_id AS metaPixelId, gtm_id AS gtmId, updated_at AS updatedAt FROM tracking_settings WHERE id = 1").first<TrackingSettings>();
  return row ?? { ...defaults };
 }
-export function isAdmin(request: Request) {
- const id = request.headers.get("oai-authenticated-user-id");
- const email = request.headers.get("oai-authenticated-user-email")?.trim().toLowerCase();
- return Boolean(id && env.ADMIN_EMAIL && email === env.ADMIN_EMAIL.trim().toLowerCase());
-}
+import { isAdmin } from "./admin-session";
+export { isAdmin };
 export function validateSettings(input: unknown): { metaPixelId: string; gtmId: string } | null {
  if (!input || typeof input !== "object" || Array.isArray(input)) return null;
  const value = input as Record<string, unknown>;

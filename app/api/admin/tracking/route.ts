@@ -2,12 +2,12 @@ import { database, isAdmin, privateHeaders, readSettings, validateSettings } fro
 export const dynamic = "force-dynamic";
 const json = (data: unknown, status = 200) => Response.json(data, { status, headers: privateHeaders });
 export async function GET(request: Request) {
- if (!isAdmin(request)) return json({ error: "Administrator sign-in required." }, 403);
+ if (!(await isAdmin(request))) return json({ error: "Administrator sign-in required." }, 403);
  try { return json(await readSettings()); }
  catch { return json({ error: "Could not load settings. Please try again." }, 503); }
 }
 export async function PUT(request: Request) {
- if (!isAdmin(request)) return json({ error: "Administrator sign-in required." }, 403);
+ if (!(await isAdmin(request))) return json({ error: "Administrator sign-in required." }, 403);
  if (request.headers.get("origin") !== new URL(request.url).origin) return json({ error: "Invalid request origin." }, 403);
  if (!request.headers.get("content-type")?.startsWith("application/json")) return json({ error: "JSON is required." }, 415);
  try {

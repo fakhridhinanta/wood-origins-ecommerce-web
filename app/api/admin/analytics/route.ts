@@ -4,7 +4,7 @@ export const dynamic = "force-dynamic";
 const json = (data: unknown, status = 200) => Response.json(data, { status, headers: privateHeaders });
 
 export async function GET(request: Request) {
-  if (!isAdmin(request)) return json({ error: "Administrator sign-in required." }, 403);
+  if (!(await isAdmin(request))) return json({ error: "Administrator sign-in required." }, 403);
   try {
     const url = new URL(request.url);
     const from = url.searchParams.get("from") || "";

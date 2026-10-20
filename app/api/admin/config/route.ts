@@ -2,13 +2,13 @@ import { database, defaultEvents, isAdmin, metaStandardEvents, privateHeaders } 
 
 export const dynamic = "force-dynamic";
 const json = (data: unknown, status = 200) => Response.json(data, { status, headers: privateHeaders });
-const canWrite = (request: Request) =>
-  isAdmin(request) &&
+const canWrite = async (request: Request) =>
+  (await isAdmin(request)) &&
   request.headers.get("origin") === new URL(request.url).origin &&
   request.headers.get("content-type")?.startsWith("application/json");
 
 export async function GET(request: Request) {
-  if (!isAdmin(request)) return json({ error: "Administrator sign-in required." }, 403);
+  if (!(await isAdmin(request))) return json({ error: "Administrator sign-in required." }, 403);
   try {
     const db = database();
     const [events, templates] = await Promise.all([
@@ -27,7 +27,7 @@ export async function GET(request: Request) {
 }
 
 export async function PUT(request: Request) {
-  if (!canWrite(request)) return json({ error: "Administrator sign-in and same-origin JSON required." }, 403);
+  if (!(await canWrite(request))) return json({ error: "Administrator sign-in and same-origin JSON required." }, 403);
   try {
     const body = await request.json() as Record<string, unknown>;
     const now = new Date().toISOString();
@@ -80,7 +80,7 @@ export async function PUT(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  if (!canWrite(request)) return json({ error: "Administrator sign-in and same-origin JSON required." }, 403);
+  if (!(await canWrite(request))) return json({ error: "Administrator sign-in and same-origin JSON required." }, 403);
   try {
     const body = await request.json() as { id?: unknown };
     const id = Number(body.id);

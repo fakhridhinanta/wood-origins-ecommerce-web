@@ -56,3 +56,6 @@ next-env.d.ts
 /work/
 
 .dev.vars*
+
+# Incremental TypeScript cache
+*.tsbuildinfo
