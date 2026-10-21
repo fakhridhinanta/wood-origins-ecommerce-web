@@ -1,0 +1,11 @@
+import { zipFunctions } from '@netlify/zip-it-and-ship-it';
+import { mkdtemp } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { resolve } from 'node:path';
+import assert from 'node:assert/strict';
+const output=await mkdtemp(resolve(tmpdir(),'wo-netlify-functions-'));
+const functions=await zipFunctions('netlify/functions',output,{basePath:process.cwd(),config:{'*':{nodeBundler:'esbuild',nodeVersion:'22'}}});
+assert.equal(functions.length,1);
+assert.equal(functions[0].name,'website');
+console.log('PASS: official Netlify function bundler generated website package.');
+console.log(JSON.stringify({name:functions[0].name,size:functions[0].size,routes:functions[0].routes},null,2));

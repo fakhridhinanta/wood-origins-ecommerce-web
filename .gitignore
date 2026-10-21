@@ -57,5 +57,10 @@ next-env.d.ts
 
 .dev.vars*
 
-# Incremental TypeScript cache
+# Netlify build output and local tooling
+netlify-app/dist/
+netlify-app/node_modules/
+netlify-app/generated/
+.netlify/
 *.tsbuildinfo
+/Netlify Handoff/
