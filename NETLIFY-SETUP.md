@@ -7,20 +7,24 @@ This repository includes a Netlify-ready website and admin dashboard. The origin
 1. Give the client access to the private GitHub repository, or transfer it to their GitHub account.
 2. In Netlify, select **Add new project → Import an existing project → GitHub** and select this repository, branch **main**.
 3. Keep the settings from the root `netlify.toml`: base directory **netlify-app**, build command **npm run build**, publish directory **netlify-app/dist** relative to the repository root (the value in the configuration is **dist**, relative to the base directory). Functions directory is **netlify/functions**, relative to the base directory. Do not select a Next.js preset or replace these with `.next` settings.
-4. Before deploying, add these environment variables with **Functions** scope (or all scopes):
+4. The private handoff package is already configured with the agreed admin ID/password and the existing Pabbly webhook from the original ZIP. You do not need to enter those values again. The password is stored as a salted PBKDF2 verifier; the webhook and verifier are bundled only into the server function, never into public browser assets. Keep the source package/repository private when sharing it with the client. To override the bundled configuration later, optionally set these environment variables with **Functions** scope (or all scopes):
 
    | Variable | Value |
    | --- | --- |
-   | `ADMIN_LOGIN_ID` | The agreed admin ID, shared separately |
-   | `ADMIN_LOGIN_PASSWORD` | The agreed admin password, shared separately |
-   | `PABBLY_WEBHOOK_URL` | The existing Pabbly Connect webhook URL, shared privately |
+   | `ADMIN_LOGIN_ID` | Optional replacement admin ID; set together with password |
+   | `ADMIN_LOGIN_PASSWORD` | Optional replacement admin password; set together with ID |
+   | `PABBLY_WEBHOOK_URL` | Optional replacement Pabbly Connect webhook URL |
 
 5. Select **Deploy**. Netlify Database uses the installed `@netlify/database` package and the migrations in `netlify-app/netlify/database/migrations` to provision Postgres and apply the schema automatically. The Netlify account must support Netlify Database (a credit-based plan). Check Data & Storage → Database and the deploy log. If the account requests database enablement, enable it there and redeploy. Do not add a manual database URL for this normal setup.
 6. Open the generated Netlify URL and `/admin`. Log in, confirm the tracking IDs, and run the checks below. Connect the custom domain only after the checks pass.
 
 ## If using the ZIP
 
-The ZIP is source code for this server-backed website, not a static drag-and-drop deployment. Extract it and import its contents into the client's GitHub repository, keeping `netlify.toml` at the repository root. Then follow the same import steps above. Netlify Drop alone will not build the functions or provision the database.
+Extract the preconfigured ZIP. While logged into the client's Netlify team, upload the **source project folder** containing `netlify.toml` using the new-project upload/build flow. Keep `netlify.toml` and the folder structure intact. Follow the build log and verify the function and database are provisioned. Alternatively, import the extracted contents into the client's GitHub repository and follow the recommended steps above. Uploading only `dist` to an existing project's static deploy dropzone does not install the backend/database. Git import or Netlify CLI is the fallback if the team's upload screen only accepts static output.
+
+## Existing production domain
+
+If `quote.woodorigins.sg` already belongs to the client's existing Netlify project, deploy this update to that **same project** to retain the domain. If a new project is used instead, attach the domain and update DNS as directed by Netlify; the source folder cannot configure an unrelated DNS account. After activation, the public website is `https://quote.woodorigins.sg/` and admin login is `https://quote.woodorigins.sg/admin`.
 
 ## Quick checks before switching the domain
 
@@ -36,7 +40,7 @@ The ZIP is source code for this server-backed website, not a static drag-and-dro
 - Existing Cloudflare D1 records, saved tracking/event settings, and WhatsApp hashcode rows are not automatically transferred to this new database. The original website remains intact. The new installation starts with the existing source's default tracking IDs/event names and empty leads/events/templates. Copy any saved overrides/templates through admin; a historical-data export/import is a separate operation if needed.
 - The website keeps approved public copy, product content, layout, images, and the existing WhatsApp messages. No Microsoft Clarity was added.
 - Netlify uses native Node functions and Postgres, not Cloudflare bindings. Source handlers are bundled through an adapter so dashboard behavior remains consistent.
-- Login uses HTTP-only same-site cookies, an eight-hour server-side session, logout revocation, origin checks, and a persistent login-attempt limit. Secrets are read from Netlify at runtime.
+- Login uses HTTP-only same-site cookies, an eight-hour server-side session, logout revocation, origin checks, and a persistent login-attempt limit. The bundled password verifier and Pabbly webhook are server-only. Environment variables, when supplied, override the bundled defaults.
 - Pabbly delivery is server-side. Leads are saved before delivery, retain the existing field names, and also include the original UTM field names. Test submissions never call Pabbly.
 - Submission IDs are unique. Retries keep the same ID. Concurrent repeat requests do not create another website lead. A timed-out external request can have been accepted by Pabbly before the response was lost; use `submissionId` for deduplication in the Pabbly/Airtable workflow as well. Absolute exactly-once external delivery cannot be guaranteed by the website alone.
 - Detailed analytics retains the existing 5,000-group/lead response limits. Analytics defaults to Live and can be filtered to Test or both; the Leads list has its own test/live filter. This is not a replacement for checking ad-platform reports.

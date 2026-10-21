@@ -5,8 +5,10 @@ Please use the Netlify-ready version containing netlify.toml and the netlify-app
 
 1. In Netlify, choose Add new project → Import an existing project → GitHub, then select the repository and main branch. You will need access to the private repository.
 2. Keep the build settings from netlify.toml; do not select the Next.js preset.
-3. Add ADMIN_LOGIN_ID, ADMIN_LOGIN_PASSWORD, and PABBLY_WEBHOOK_URL as server environment variables. We will share their values privately.
+3. The admin login and existing Pabbly connection are already configured in the private package; no manual environment values are required. Keep this source package/repository private. Environment variables are only needed if you want to override the supplied settings later.
 4. Deploy. The package includes Netlify Database setup and migrations; please use an account with Netlify Database support. If Netlify prompts you to enable the database, enable it under Data & Storage → Database and redeploy.
 5. Check the website and /admin, submit a test quote using ?test=1, and then verify one labeled live enquiry reaches Airtable/Pabbly before connecting the production domain.
 
 Full setup and verification steps are in NETLIFY-SETUP.md. The new database starts empty; existing records/settings in the current hosting do not move automatically.
+
+If using the folder instead of GitHub: while logged into Netlify, upload the source folder containing netlify.toml using the new-project build flow. Do not upload only the dist folder. For the existing quote.woodorigins.sg domain, update the same Netlify project or connect the domain/DNS if you create a new project.

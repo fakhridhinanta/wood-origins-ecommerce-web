@@ -5,7 +5,7 @@ Prepared on 21 October 2026. Status: ready for deployment and acceptance testing
 ## Completed checks
 
 - Netlify build completed using the dependency lockfile.
-- 17 automated tests passed using a Postgres-compatible PGlite database and DOM execution of the actual public quote-form scripts.
+- 18 automated tests passed using a Postgres-compatible PGlite database and DOM execution of the actual public quote-form scripts.
 - Netlify's official function packager successfully produced a deployable Node function and recognized `/`, `/admin`, `/admin/*`, and `/api/*` routes.
 - Public website copy outside script blocks matches the existing approved template byte for byte. Images and CSS/layout are retained.
 - Anonymous admin/API access is blocked. Correct login works; wrong credentials, forged sessions, cross-origin requests, and repeated login attempts are rejected; logout revokes access.
@@ -14,7 +14,7 @@ Prepared on 21 October 2026. Status: ready for deployment and acceptance testing
 - Quote flow validates consent, tracks each visited step once, retains first-touch UTM, avoids duplicate form submissions, and stays on the contact step when delivery fails.
 - Test leads do not call the Pabbly webhook. Mocked live deliveries preserve the existing payload fields plus original UTM names. Concurrent duplicate requests result in one stored lead and one normal webhook delivery; failed delivery retries retain the same submission ID.
 - Analytics groups event results by event/campaign/ad set/ad and supports dates plus test/live filtering. Default analytics mode is Live.
-- Login credentials and the webhook are runtime environment variables; neither is compiled into public assets.
+- The preconfigured password verifier and existing Pabbly webhook are bundled into the server function only. Neither is compiled into public assets. Runtime environment variables can optionally override the supplied configuration.
 
 ## Client-side acceptance still required
 

@@ -5,6 +5,7 @@ import { PGlite } from '@electric-sql/pglite';
 import { createDatabase, postgresQuery } from '../src/database.mjs';
 import website from '../netlify/functions/website.mjs';
 import { prepareLanding } from '../scripts/frontend.mjs';
+import { serverConfig } from '../src/server-config.mjs';
 
 const base = 'https://wood-origins.example';
 const originalFetch = globalThis.fetch;
@@ -95,6 +96,16 @@ test('Netlify application against real Postgres SQL',async t=>{
     let sends=0;globalThis.fetch=async()=>{sends++;await new Promise(r=>setTimeout(r,30));return new Response('ok')};
     const results=await Promise.all([post('/api/leads',lead('submission-concurrent-001',{testLive:false})),post('/api/leads',lead('submission-concurrent-001',{testLive:false}))]);
     assert(results.some(r=>r.status===200));assert(results.every(r=>[200,409].includes(r.status)));assert.equal(sends,1);
+  });
+  await t.test('preconfigured webhook works without an environment variable and remains server-only',async()=>{
+    delete process.env.PABBLY_WEBHOOK_URL;
+    let called=false;
+    globalThis.fetch=async(url)=>{assert(url===serverConfig.pabblyWebhookUrl,'uses webhook supplied in original ZIP');called=true;return new Response('ok');};
+    assert.equal((await post('/api/leads',lead('submission-default-config',{testLive:false}))).status,200);
+    assert(called);
+    const page=await (await request('/')).text();assert(!page.includes(serverConfig.pabblyWebhookUrl));assert(!page.includes(serverConfig.passwordHash));
+    assert.equal((await request('/netlify-app/src/server-config.mjs')).status,404);
+    process.env.PABBLY_WEBHOOK_URL='https://webhook.example/test';
   });
   await t.test('events group correctly, preserve test/live status, and respect date filtering',async()=>{
     const event={eventId:'event-test-001',eventName:'Lead',eventType:'get_your_quote_clicked',sessionId:'session-test-001',timestamp:'2026-10-21T12:00:00.000Z',campaignName:'QA Campaign',adSetName:'QA Ad Set',adName:'QA Ad',testLive:true};

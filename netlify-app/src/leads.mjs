@@ -1,4 +1,5 @@
 import { env } from './database.mjs';
+import { webhookUrl } from './credentials.mjs';
 
 const json = (data, status = 200) => Response.json(data, { status, headers: { 'Cache-Control': 'no-store' } });
 const string = value => typeof value === 'string' ? value.trim() : '';
@@ -16,7 +17,7 @@ export async function submitLead(request) {
     return json({ error: 'Enter a valid name, phone number, and consent.' }, 400);
   }
   const isTest = testMode(body.testLive);
-  const url = process.env.PABBLY_WEBHOOK_URL;
+  const url = webhookUrl();
   if (!isTest && !url) return json({ error: 'Lead delivery is not configured. Please contact us on WhatsApp.' }, 503);
   if (url && !url.startsWith('https://')) return json({ error: 'Lead delivery configuration is invalid.' }, 503);
   const now = new Date().toISOString();

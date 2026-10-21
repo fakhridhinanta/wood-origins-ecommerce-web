@@ -20,6 +20,13 @@ await build({
   plugins:[{
     name:'wood-origins-netlify-adapter',setup(plugin){
       plugin.onResolve({filter:/^cloudflare:workers$/},()=>({path:resolve(app,'src/database.mjs')}));
+      plugin.onLoad({filter:/[/\\]lib[/\\]admin-session\.ts$/},async args=>{
+        let contents=await readFile(args.path,'utf8');
+        const start=contents.indexOf('export async function credentialsMatch('),end=contents.indexOf('function token(',start);
+        if(start<0||end<0)throw Error('Admin login hook changed; review required.');
+        contents=contents.slice(0,start)+'export { verifyCredentials as credentialsMatch } from '+JSON.stringify(resolve(app,'src/credentials.mjs'))+';\n'+contents.slice(end);
+        return {contents,loader:'ts'};
+      });
       plugin.onResolve({filter:/\.template\?raw$/},args=>({path:resolve(args.resolveDir,args.path.replace(/\?raw$/,'')),namespace:'template'}));
       plugin.onLoad({filter:/.*/,namespace:'template'},async args=>{
         let contents=await readFile(args.path,'utf8');
