@@ -7,7 +7,7 @@ import { spawnSync } from 'node:child_process';
 const app=resolve(dirname(fileURLToPath(import.meta.url)),'..'),root=resolve(app,'..');
 const stage=await mkdtemp(resolve(tmpdir(),'wood-origins-netlify-source-'));
 const output=resolve(root,'Netlify Handoff');await mkdir(output,{recursive:true});
-const archive=resolve(output,'wood-origins-netlify-preconfigured-2026-10-21.zip');
+const archive=resolve(output,'wood-origins-netlify-2026-10-29.zip');
 if(existsSync(archive))throw Error('A handoff archive already exists. Keep it and choose a new version name before replacing.');
 const selected=[
  'netlify.toml','NETLIFY-SETUP.md','NETLIFY-VERIFICATION.md','CLIENT-NETLIFY-MESSAGE.txt',

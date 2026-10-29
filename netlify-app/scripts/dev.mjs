@@ -8,8 +8,10 @@ import { createDatabase } from '../src/database.mjs';
 import website from '../netlify/functions/website.mjs';
 const pg = new PGlite();
 await pg.exec(await readFile(new URL('../netlify/database/migrations/0001_wood_origins.sql',import.meta.url),'utf8'));
+await pg.exec(await readFile(new URL('../netlify/database/migrations/0002_ecommerce_whatsapp_hashcodes.sql',import.meta.url),'utf8'));
 globalThis.__woTestDatabase=createDatabase(async(text,values)=>{const result=await pg.query(text,values);return {rows:result.rows,rowCount:result.affectedRows};});
-if(!process.env.ADMIN_LOGIN_ID||!process.env.ADMIN_LOGIN_PASSWORD)throw Error('Set ADMIN_LOGIN_ID and ADMIN_LOGIN_PASSWORD for local testing.');
+// Keep local preview enquiries away from the real Pabbly webhook.
+process.env.PABBLY_WEBHOOK_URL='https://example.invalid/wood-origins-preview';
 const port=Number(process.env.PORT||8877);
 const server=createServer(async(req,res)=>{
   try{

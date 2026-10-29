@@ -21,7 +21,7 @@ function browser(query='?test=1&utm_source=Facebook_Ads&utm_medium=feed&utm_camp
   };
   const scripts=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]).filter(s=>s.trim());
   for(const script of scripts){
-    const expose=script.includes('function startWizard(')?`;window.__qa={start:startWizard,next:wizNext,back:wizBack,track,attribution,openWA,submitLead,state:()=>({step:wizStep,flow:wizFlow,answers:wizAns}),answer:(key,value)=>{wizAns[key]=value;}};`:'';
+    const expose=script.includes('function startWizard(')?`;window.__qa={start:startWizard,next:wizNext,back:wizBack,track,attribution,openWA,wa,wizSend,submitLead,state:()=>({step:wizStep,flow:wizFlow,answers:wizAns}),answer:(key,value)=>{wizAns[key]=value;}};`:'';
     w.eval(script+expose);
   }
   return {dom,w,qa:w.__qa,calls,targets,fail:(value)=>{fail=value;}};
@@ -49,7 +49,18 @@ test('quote form tracks steps once and preserves first-touch UTM',async()=>{
   qa.back();await qa.next();assert.equal(calls.filter(c=>c.url==='/api/leads').length,1,'going back does not resubmit');
   assert.equal(calls.filter(c=>c.url==='/api/events'&&c.body.eventType==='form_step_9_completed').length,1);
   w.history.replaceState(null,'','/?utm_campaign=Later%20Campaign');assert.equal(qa.attribution().campaignName,'QA Campaign');
-  await qa.openWA('Original WhatsApp message');assert(targets[0].location.href.includes('Reference%3A%20QA_HASH'));assert(targets[0].location.href.includes('Original%20WhatsApp%20message'));
+  assert.equal(w.document.querySelectorAll('.cta-links [onclick="wa()"], .cta-band [onclick="wa()"], .fab[onclick="wa()"], .mbar [onclick="wa()"]' ).length,4);
+  await qa.wa();
+  assert.equal(new URL(targets[0].location.href).searchParams.get('text'),"Hi Wood Origins! I'm interested in Valley Oak vinyl flooring. Could you help me? [QA_HASH]");
+  await qa.wizSend();
+  const quoteMessage=new URL(targets[1].location.href).searchParams.get('text');
+  assert(quoteMessage.startsWith("Hi Wood Origins! I'd like to lock in my quote.\n\nName: QA Tester\nMobile: +65 8888 9999\nFloor: Valley Oak\nRooms:"));
+  assert(quoteMessage.includes('\nSkirting:'));
+  assert(quoteMessage.includes('\nExisting floor: Parquet / timber'));
+  assert(!quoteMessage.includes('[QA_HASH]'));
+  assert.equal(calls.filter(c=>String(c.url).startsWith('/api/whatsapp-template')).length,1,'quote WhatsApp skips hashcode lookup');
+  const lookup = calls.find(c=>String(c.url).startsWith('/api/whatsapp-template'));
+  assert.equal(new URL(lookup.url,'https://wood-origins.example').searchParams.get('landing'),w.location.search);
   assert.equal(w.fbq,undefined,'test visit does not initialize Meta Pixel');
   assert(calls.every(c=>!String(c.url).includes('connect.pabbly.com')),'no browser webhook delivery');
   dom.window.close();

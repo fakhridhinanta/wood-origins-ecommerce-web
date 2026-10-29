@@ -1,16 +1,17 @@
 # Netlify handoff verification
 
-Prepared on 21 October 2026. Status: ready for deployment and acceptance testing in the client's Netlify account; not yet verified on that account.
+Updated on 29 October 2026. Status: ready for deployment and acceptance testing in the client's Netlify account; not yet verified on that account.
 
 ## Completed checks
 
 - Netlify build completed using the dependency lockfile.
-- 18 automated tests passed using a Postgres-compatible PGlite database and DOM execution of the actual public quote-form scripts.
+- Automated tests passed using a Postgres-compatible PGlite database and DOM execution of the actual public quote-form scripts.
 - Netlify's official function packager successfully produced a deployable Node function and recognized `/`, `/admin`, `/admin/*`, and `/api/*` routes.
 - Public website copy outside script blocks matches the existing approved template byte for byte. Images and CSS/layout are retained.
 - Anonymous admin/API access is blocked. Correct login works; wrong credentials, forged sessions, cross-origin requests, and repeated login attempts are rejected; logout revokes access.
 - Tracking ID updates and standard/custom event names persist and apply to future page loads.
-- WhatsApp hashcode add/edit/delete, case-insensitive exact matching, and unmatched fallback passed.
+- WhatsApp hashcode add/edit/delete, normalized matching, changing parameter names, unique-ad fallback, and unmatched fallback passed. Three Ecommerce Web campaign hashcodes are seeded by migration.
+- Direct WhatsApp chats include the matching hashcode after the product-specific opening message. Quote-form follow-up chats omit the hashcode because the form lead already carries attribution.
 - Quote flow validates consent, tracks each visited step once, retains first-touch UTM, avoids duplicate form submissions, and stays on the contact step when delivery fails.
 - Test leads do not call the Pabbly webhook. Mocked live deliveries preserve the existing payload fields plus original UTM names. Concurrent duplicate requests result in one stored lead and one normal webhook delivery; failed delivery retries retain the same submission ID.
 - Analytics groups event results by event/campaign/ad set/ad and supports dates plus test/live filtering. Default analytics mode is Live.

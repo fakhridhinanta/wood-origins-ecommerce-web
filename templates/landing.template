@@ -448,7 +448,7 @@ footer a:hover{opacity:1;}
           <button class="btn btn-primary btn-hero" onclick="startWizard('quote')">📐 Get your quote</button>
           <div class="sample-note">Personalised pricing in about a minute. No upfront pressure.</div>
           <div class="cta-links">
-            <a onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')">Prefer to chat? WhatsApp us →</a>
+            <a onclick="wa()">Prefer to chat? WhatsApp us →</a>
           </div>
         </div>
       </div>
@@ -584,7 +584,7 @@ footer a:hover{opacity:1;}
   <p>Send us your space and our team will recommend finishes and give you a firm price — usually within the hour.</p>
   <div class="cta-band-btns">
     <button class="btn btn-primary" onclick="startWizard('quote')">📐 Get your quote</button>
-    <button class="btn btn-wa" onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')">💬 WhatsApp us</button>
+    <button class="btn btn-wa" onclick="wa()">💬 WhatsApp us</button>
   </div>
 </div></div>
 
@@ -592,13 +592,13 @@ footer a:hover{opacity:1;}
 <!-- footer removed -->
 
 <!-- FLOATING WHATSAPP -->
-<button class="fab" onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')" title="WhatsApp us">💬</button>
+<button class="fab" onclick="wa()" title="WhatsApp us">💬</button>
 
 <!-- MOBILE STICKY -->
 <div class="mbar">
   <div class="mp"><div class="mpn" style="font-size:12.5px;color:var(--brown-soft);">Not sure? We'll guide you.</div></div>
   <button class="btn btn-primary" onclick="startWizard('quote')">Get your quote</button>
-  <button class="btn btn-wa" onclick="openWA('Hi Wood Origins! I would like to enquire about flooring.')">WhatsApp us</button>
+  <button class="btn btn-wa" onclick="wa()">WhatsApp us</button>
 </div>
 
 <!-- QUOTE MODAL -->
@@ -705,7 +705,7 @@ function eventKey(type){return type==='get_your_quote_clicked'?'quote_cta_clicke
 function track(type,params){const name=EVENT_NAMES[eventKey(type)]||type,id=crypto.randomUUID();const d=Object.assign({eventId:id,eventName:name,eventType:type,timestamp:new Date().toISOString(),pageUrl:location.href,testLive:IS_TEST},attribution(),params||{});try{if(window.fbq){if(META_STANDARD.has(name))fbq('track',name,d,{eventID:id});else fbq('trackCustom',name,d,{eventID:id});}}catch(e){}try{if(CONFIG.gtmId){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:name,event_id:id,event_type:type,...d});}}catch(e){}try{fetch('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,body:JSON.stringify(d)}).catch(()=>{});}catch(e){}}
 (function(){const d={eventId:crypto.randomUUID(),eventName:'PageView',eventType:'page_view',timestamp:new Date().toISOString(),pageUrl:location.href,testLive:IS_TEST,...attribution()};fetch('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,body:JSON.stringify(d)}).catch(()=>{});})();
 function waLink(msg){ return 'https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent(msg); }
-async function openWA(msg){const target=window.open('about:blank','_blank');track('whatsapp_us_clicked',{ctaName:'WhatsApp Us'});try{const a=attribution(),r=await fetch('/api/whatsapp-template?campaign='+encodeURIComponent(a.campaignName)+'&adset='+encodeURIComponent(a.adSetName)+'&ad='+encodeURIComponent(a.adName));const d=await r.json();if(d.matched&&d.hashcode)msg+='\n\nReference: '+d.hashcode;}catch(e){}if(target)target.location.href=waLink(msg);else location.href=waLink(msg);}
+async function openWA(msg,includeHashcode=true){const target=window.open('about:blank','_blank');track('whatsapp_us_clicked',{ctaName:'WhatsApp Us'});if(includeHashcode)try{const a=attribution(),r=await fetch('/api/whatsapp-template?campaign='+encodeURIComponent(a.campaignName)+'&adset='+encodeURIComponent(a.adSetName)+'&ad='+encodeURIComponent(a.adName)+'&landing='+encodeURIComponent(location.search));const d=await r.json();if(d.matched&&d.hashcode){const marker=' ['+d.hashcode+']',split=msg.indexOf('\n\n');msg=split<0?msg+marker:msg.slice(0,split)+marker+msg.slice(split);}}catch(e){}if(target)target.location.href=waLink(msg);else location.href=waLink(msg);}
 let leadSubmitting=false;
 async function submitLead(kind,data){if(kind==='quote_submitted'&&leadSubmitting)return;leadSubmitting=true;const submissionId=crypto.randomUUID(),d=Object.assign({kind,source:'lvt-lp',page:location.href,submissionId},attribution(),data||{});try{const response=await fetch('/api/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({submissionId,name:d.name,phone:d.phone,email:d.email,answers:d,testLive:IS_TEST,...attribution()})});if(!response.ok)throw Error('Lead could not be saved');if(kind==='quote_submitted')track('form_submitted',{leadId:submissionId,pageSection:'quote'});if(!IS_TEST&&CONFIG.leadWebhook){const b=new URLSearchParams();Object.keys(d).forEach(k=>{const v=d[k];b.append(k,v&&typeof v==='object'?JSON.stringify(v):String(v??''))});if(navigator.sendBeacon)navigator.sendBeacon(CONFIG.leadWebhook,b);else await fetch(CONFIG.leadWebhook,{method:'POST',mode:'no-cors',keepalive:true,body:b});}return submissionId;}catch(e){leadSubmitting=false;track('form_submission_failed',{leadId:submissionId,pageSection:'quote'});toast('Your quote could not be sent. Please try again.');throw e;}}
 /* ===================================================================================== */
@@ -901,7 +901,7 @@ function renderFin(){
 }
 
 function buySample(){cart++;document.getElementById('cartCount').textContent=cart;track('sample_add',{sku:sku.name});toast('🧾 '+sku.name+' sample added — $5.00 (refunded on order)');}
-function wa(){ openWA("Hi Wood Origins! I'm interested in "+sku.name+" vinyl flooring. Could you help me?"); }
+function wa(){ return openWA("Hi Wood Origins! I'm interested in "+sku.name+" vinyl flooring. Could you help me?"); }
 function csChat(){toast('💬 Opens WhatsApp with our customer support team for supply-only box pricing & stock');}
 function openQuote(){ if(mode==='so'){ csChat(); return; } document.getElementById('quoteModal').classList.add('show');renderRooms();calcQuote();}
 function closeQuote(){document.getElementById('quoteModal').classList.remove('show');}
@@ -1129,7 +1129,7 @@ function wizSend(){
   } else {
     msg="Hi Wood Origins! I did the dream-floor quiz — here are my picks.\n\nName: "+nm+"\nMobile: "+ph+"\nMood: "+(wizAns.mood||'')+"\nPalette: "+(wizAns.palette||'')+"\nStyle: "+(wizAns.style||'');
   }
-  wizCapture(); closeWiz(); openWA(msg);
+  wizCapture(); closeWiz(); return openWA(msg,wizKey!=='quote');
 }
 document.getElementById('wizModal').addEventListener('click',e=>{if(e.target.id==='wizModal')closeWiz();});
 
